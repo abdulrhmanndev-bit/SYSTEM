@@ -1,26 +1,314 @@
 @import "tailwindcss";
 
+/* Light Mode */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Background */
+  --background-page: #f8fafc;
+  --background-surface: #ffffff;
+  --background-subtle: #f1f5f9;
+  --background-elevated: #ffffff;
+  --background-inverse: #0f172a;
+
+  /* Surface */
+  --surface-subtle: #f1f5f9;
+  --surface-hover: #f8fafc;
+  --surface-selected: #eff8ff;
+
+  /* Text */
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-tertiary: #64748b;
+  --text-disabled: #94a3b8;
+  --text-inverse: #ffffff;
+  --text-link: #1769aa;
+
+  /* Border */
+  --border-default: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --border-subtle: #f1f5f9;
+  --border-focus: #1769aa;
+  --border-error: #d64545;
+
+  /* Action Primary */
+  --action-primary-bg: #1769aa;
+  --action-primary-hover: #155a91;
+  --action-primary-active: #104b78;
+  --action-primary-text: #ffffff;
+
+  /* Status Success */
+  --status-success-bg: #f0fdf4;
+  --status-success-border: #86efac;
+  --status-success-text: #166534;
+  --status-success-icon: #16a34a;
+
+  /* Status Warning */
+  --status-warning-bg: #fffbeb;
+  --status-warning-border: #fde68a;
+  --status-warning-text: #92400e;
+  --status-warning-icon: #f4b740;
+
+  /* Status Error */
+  --status-error-bg: #fef2f2;
+  --status-error-border: #fecaca;
+  --status-error-text: #991b1b;
+  --status-error-icon: #d64545;
+
+  /* Status Info */
+  --status-info-bg: #eff8ff;
+  --status-info-border: #b9ddff;
+  --status-info-text: #155a91;
+  --status-info-icon: #1769aa;
+
+  /* Sidebar */
+  --sidebar: #0b1f33;
+  --sidebar-foreground: #cbd5e1;
+  --sidebar-border: #24445d;
+
+  /* Sidebar Item */
+  --sidebar-item-hover: #16344d;
+  --sidebar-item-active: #1769aa;
+  --sidebar-item-active-foreground: #ffffff;
+
+  /* Card */
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
+  --card-hover: #f8fafc;
+  --card-selected: #eff8ff;
+
+  /* Input */
+  --input-bg: #ffffff;
+  --input-border: #cbd5e1;
+  --input-text: #0f172a;
+  --input-placeholder: #94a3b8;
+  --input-hover: #94a3b8;
+  --input-focus: #1769aa;
+  --input-disabled: #f1f5f9;
+
+  /* Table */
+  --table-border: #e2e8f0;
+  --table-header-bg: #f8fafc;
+  --table-row-bg: #ffffff;
+  --table-row-hover: #f8fafc;
+  --table-row-selected: #eff8ff;
+
+  /* Trip Status */
+  --trip-scheduled: #1769aa;
+  --trip-assigned: #20b8c5;
+  --trip-in-progress: #20a878;
+  --trip-completed: #16a34a;
+  --trip-delayed: #f4b740;
+  --trip-cancelled: #d64545;
+  --trip-pending: #64748b;
 }
 
+/* Dark Mode */
+
+.dark {
+  /* Background */
+  --background-page: #0b1220;
+  --background-surface: #111827;
+  --background-subtle: #1e293b;
+  --background-elevated: #111827;
+  --background-inverse: #f8fafc;
+
+  /* Surface */
+  --surface-subtle: #1e293b;
+  --surface-hover: #243244;
+  --surface-selected: #123a5a;
+
+  /* Text */
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-tertiary: #94a3b8;
+  --text-disabled: #64748b;
+  --text-inverse: #0f172a;
+  --text-link: #4fa9df;
+
+  /* Border */
+  --border-default: #334155;
+  --border-strong: #475569;
+  --border-subtle: #1e293b;
+  --border-focus: #4fa9df;
+  --border-error: #76262b;
+
+  /* Action Primary */
+  --action-primary-bg: #2385c8;
+  --action-primary-hover: #4fa9df;
+  --action-primary-active: #1769aa;
+  --action-primary-text: #ffffff;
+
+  /* Status Success */
+  --status-success-bg: #0d3328;
+  --status-success-border: #176b52;
+  --status-success-text: #6ee7b7;
+  --status-success-icon: #34d399;
+
+  /* Status Warning */
+  --status-warning-bg: #352a0d;
+  --status-warning-border: #705a1a;
+  --status-warning-text: #fcd34d;
+  --status-warning-icon: #fbbf24;
+
+  /* Status Error */
+  --status-error-bg: #3a1719;
+  --status-error-border: #76262b;
+  --status-error-text: #fda4af;
+  --status-error-icon: #f87171;
+
+  /* Status Info */
+  --status-info-bg: #122b4a;
+  --status-info-border: #28558a;
+  --status-info-text: #93c5fd;
+  --status-info-icon: #60a5fa;
+
+  /* Sidebar */
+  --sidebar: #080f1a;
+  --sidebar-foreground: #94a3b8;
+  --sidebar-border: #263548;
+
+  /* Sidebar Item */
+  --sidebar-item-hover: #172436;
+  --sidebar-item-active: #155a91;
+  --sidebar-item-active-foreground: #ffffff;
+
+  /* Card */
+  --card-bg: #111827;
+  --card-border: #263548;
+  --card-hover: #172436;
+  --card-selected: #123a5a;
+
+  /* Input */
+  --input-bg: #111827;
+  --input-border: #475569;
+  --input-text: #f8fafc;
+  --input-placeholder: #64748b;
+  --input-hover: #64748b;
+  --input-focus: #4fa9df;
+  --input-disabled: #1e293b;
+
+  /* Table */
+  --table-border: #263548;
+  --table-header-bg: #172131;
+  --table-row-bg: #111827;
+  --table-row-hover: #172436;
+  --table-row-selected: #123a5a;
+}
+
+/* Tailwind Theme */
+
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  /* Main */
+  --color-background: var(--background-page);
+  --color-foreground: var(--text-primary);
+
+  /* Background */
+  --color-background-page: var(--background-page);
+  --color-background-surface: var(--background-surface);
+  --color-background-subtle: var(--background-subtle);
+  --color-background-elevated: var(--background-elevated);
+  --color-background-inverse: var(--background-inverse);
+
+  /* Surface */
+  --color-surface-subtle: var(--surface-subtle);
+  --color-surface-hover: var(--surface-hover);
+  --color-surface-selected: var(--surface-selected);
+
+  /* Text */
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-text-disabled: var(--text-disabled);
+  --color-text-inverse: var(--text-inverse);
+  --color-text-link: var(--text-link);
+
+  /* Border */
+  --color-border-default: var(--border-default);
+  --color-border-strong: var(--border-strong);
+  --color-border-subtle: var(--border-subtle);
+  --color-border-focus: var(--border-focus);
+  --color-border-error: var(--border-error);
+
+  /* Action Primary */
+  --color-action-primary-bg: var(--action-primary-bg);
+  --color-action-primary-hover: var(--action-primary-hover);
+  --color-action-primary-active: var(--action-primary-active);
+  --color-action-primary-text: var(--action-primary-text);
+
+  /* Status Success */
+  --color-status-success-bg: var(--status-success-bg);
+  --color-status-success-border: var(--status-success-border);
+  --color-status-success-text: var(--status-success-text);
+  --color-status-success-icon: var(--status-success-icon);
+
+  /* Status Warning */
+  --color-status-warning-bg: var(--status-warning-bg);
+  --color-status-warning-border: var(--status-warning-border);
+  --color-status-warning-text: var(--status-warning-text);
+  --color-status-warning-icon: var(--status-warning-icon);
+
+  /* Status Error */
+  --color-status-error-bg: var(--status-error-bg);
+  --color-status-error-border: var(--status-error-border);
+  --color-status-error-text: var(--status-error-text);
+  --color-status-error-icon: var(--status-error-icon);
+
+  /* Status Info */
+  --color-status-info-bg: var(--status-info-bg);
+  --color-status-info-border: var(--status-info-border);
+  --color-status-info-text: var(--status-info-text);
+  --color-status-info-icon: var(--status-info-icon);
+
+  /* Sidebar */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+
+  /* Sidebar Item */
+  --color-sidebar-item-hover: var(--sidebar-item-hover);
+  --color-sidebar-item-active: var(--sidebar-item-active);
+  --color-sidebar-item-active-foreground: var(--sidebar-item-active-foreground);
+
+  /* Card */
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
+  --color-card-hover: var(--card-hover);
+  --color-card-selected: var(--card-selected);
+
+  /* Input */
+  --color-input-bg: var(--input-bg);
+  --color-input-border: var(--input-border);
+  --color-input-text: var(--input-text);
+  --color-input-placeholder: var(--input-placeholder);
+  --color-input-hover: var(--input-hover);
+  --color-input-focus: var(--input-focus);
+  --color-input-disabled: var(--input-disabled);
+
+  /* Table */
+  --color-table-border: var(--table-border);
+  --color-table-header-bg: var(--table-header-bg);
+  --color-table-row-bg: var(--table-row-bg);
+  --color-table-row-hover: var(--table-row-hover);
+  --color-table-row-selected: var(--table-row-selected);
+
+  /* Trip Status */
+  --color-trip-scheduled: var(--trip-scheduled);
+  --color-trip-assigned: var(--trip-assigned);
+  --color-trip-in-progress: var(--trip-in-progress);
+  --color-trip-completed: var(--trip-completed);
+  --color-trip-delayed: var(--trip-delayed);
+  --color-trip-cancelled: var(--trip-cancelled);
+  --color-trip-pending: var(--trip-pending);
+
+  /* Fonts */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* Base */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--background-page);
+  color: var(--text-primary);
   font-family: Arial, Helvetica, sans-serif;
 }
