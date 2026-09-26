@@ -1,3 +1,5 @@
 {
-    "poda":"poda1"
+    "home": {
+        "hello": "Turkce"
+    }
 }

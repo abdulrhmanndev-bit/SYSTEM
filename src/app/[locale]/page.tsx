@@ -1,5 +1,5 @@
-import LanguageSwitcher from "@/components/LanguageSwitcher";
-import ThemeToggle from "@/components/ThemeToggle";
+import LanguageSwitcher from "@/components/Toggles/LanguageSwitcher";
+import { ModeToggle } from "@/components/Toggles/ModeToggle";
 import { useTranslations } from "next-intl";
 export default function Home() {
   const t = useTranslations("home");
@@ -11,7 +11,7 @@ export default function Home() {
           <LanguageSwitcher />
         </div>
         <div>
-          <ThemeToggle />
+          <ModeToggle />
         </div>
       </div>
     </div>
