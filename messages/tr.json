@@ -1,5 +1,52 @@
 {
-    "home": {
-        "hello": "Turkce"
+  "auth": {
+    "login": {
+      "logoAlt": "Logo",
+      "title": "Hesabınıza giriş yapın",
+      "description": "Tekrar hoş geldiniz! Devam etmek için bilgilerinizi girin.",
+
+      "email": {
+        "label": "İş e-postası",
+        "placeholder": "you@company.com",
+        "required": "E-posta adresi gereklidir",
+        "invalid": "Lütfen geçerli bir e-posta adresi girin"
+      },
+      "password": {
+        "label": "Şifre",
+        "placeholder": "Şifrenizi girin",
+        "show": "Şifreyi göster",
+        "hide": "Şifreyi gizle",
+        "required": "Şifre gereklidir",
+        "minLength": "Şifre en az 6 karakter olmalıdır"
+      },
+
+      "rememberMe": "Beni hatırla",
+      "forgotPassword": "Şifrenizi mi unuttunuz?",
+      "submit": "Giriş yap",
+
+      "noAccount": "Hesabınız yok mu?",
+      "requestAccess": "Erişim talep et",
+
+      "invited": "Bir şirket tarafından davet edildiniz mi?",
+      "joinWithCode": "Davet koduyla katıl"
+    },
+    "email": {
+      "label": "İş e-postası",
+      "placeholder": "you@company.com",
+      "required": "E-posta adresi gereklidir",
+      "invalid": "Geçerli bir e-posta adresi girin"
+    },
+    "password": {
+      "label": "Şifre",
+      "placeholder": "Şifrenizi girin",
+      "show": "Şifreyi göster",
+      "hide": "Şifreyi gizle",
+      "required": "Şifre gereklidir",
+      "minLength": "Şifre en az 6 karakter olmalıdır"
     }
+  },
+  "visual": {
+    "imageAlt": "Ulaşım platformu",
+    "title": "Tek Platform. Tüm Ulaşım Operasyonları."
+  }
 }

@@ -1,6 +1,10 @@
 @import "tailwindcss";
+
 @custom-variant dark (&:where(.dark, .dark *));
-/* Light Mode */
+
+/* =========================
+   Light Mode
+========================= */
 
 :root {
   /* Background */
@@ -102,7 +106,9 @@
   --trip-pending: #64748b;
 }
 
-/* Dark Mode */
+/* =========================
+   Dark Mode
+========================= */
 
 .dark {
   /* Background */
@@ -195,12 +201,35 @@
   --table-row-selected: #123a5a;
 }
 
-/* Tailwind Theme */
+/* =========================
+   Tailwind Theme
+========================= */
 
 @theme inline {
-  /* Main */
+  /* Shadcn Core */
   --color-background: var(--background-page);
   --color-foreground: var(--text-primary);
+
+  --color-primary: var(--action-primary-bg);
+  --color-primary-foreground: var(--action-primary-text);
+
+  --color-secondary: var(--background-subtle);
+  --color-secondary-foreground: var(--text-primary);
+
+  --color-muted: var(--background-subtle);
+  --color-muted-foreground: var(--text-tertiary);
+
+  --color-accent: var(--surface-hover);
+  --color-accent-foreground: var(--text-primary);
+
+  --color-popover: var(--background-elevated);
+  --color-popover-foreground: var(--text-primary);
+
+  --color-border: var(--border-default);
+  --color-input: var(--input-border);
+  --color-ring: var(--border-focus);
+
+  --color-destructive: var(--status-error-icon);
 
   /* Background */
   --color-background-page: var(--background-page);
@@ -305,7 +334,9 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* Base */
+/* =========================
+   Base
+========================= */
 
 body {
   background: var(--background-page);

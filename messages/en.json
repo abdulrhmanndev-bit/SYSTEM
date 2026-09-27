@@ -1,5 +1,53 @@
 {
-    "home": {
-        "hello": "Hello World"
+  "auth": {
+    "login": {
+      "logoAlt": "Logo",
+      "title": "Log in to your account",
+      "description": "Welcome back! Please enter your details to continue.",
+
+      "email": {
+        "label": "Work email",
+        "placeholder": "you@company.com",
+        "required": "Email is required",
+        "invalid": "Please enter a valid email address"
+      },
+
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter your password",
+        "show": "Show password",
+        "hide": "Hide password",
+        "required": "Password is required",
+        "minLength": "Password must be at least 6 characters"
+      },
+
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?",
+      "submit": "Log in",
+
+      "noAccount": "Don't have an account?",
+      "requestAccess": "Request access",
+
+      "invited": "Invited by a company?",
+      "joinWithCode": "Join with an invite code"
+    },
+    "email": {
+      "label": "Work email",
+      "placeholder": "you@company.com",
+      "required": "Email is required",
+      "invalid": "Enter a valid email address"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Enter your password",
+      "show": "Show password",
+      "hide": "Hide password",
+      "required": "Password is required",
+      "minLength": "Password must be at least 6 characters"
     }
+  },
+  "visual": {
+    "imageAlt": "Transportation platform",
+    "title": "One Platform. Every Transportation Operation."
+  }
 }

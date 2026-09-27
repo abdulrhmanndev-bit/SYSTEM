@@ -11,14 +11,12 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-type Locale = "en" | "ar" | "tr";
-
 export default function LanguageSwitcher() {
-  const locale = useLocale() as Locale;
+  const locale = useLocale() as string;
   const pathname = usePathname();
   const router = useRouter();
 
-  const changeLanguage = (newLocale: Locale) => {
+  const changeLanguage = (newLocale: string) => {
     if (newLocale === locale) return;
 
     router.replace(pathname, {

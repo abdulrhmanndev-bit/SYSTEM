@@ -1,7 +1,7 @@
-import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { notFound } from "next/navigation";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
-import { routing } from "@/i18n/routing";
+import Navbar from "@/components/navbar/Navbar";
 
 type Props = {
   children: React.ReactNode;
@@ -13,14 +13,17 @@ type Props = {
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
 
-  if (!hasLocale(routing.locales, locale)) {
-    notFound();
-  }
-
+  const messages = await getMessages();
   const dir = locale === "ar" ? "rtl" : "ltr";
+
   return (
-    <div lang={locale} dir={dir}>
-      <NextIntlClientProvider>{children}</NextIntlClientProvider>
-    </div>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <div lang={locale} dir={dir} className="flex min-h-dvh flex-col">
+        <Navbar />
+
+        <main className="flex-1">{children}</main>
+      </div>
+      
+    </NextIntlClientProvider>
   );
 }
