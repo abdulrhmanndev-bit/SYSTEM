@@ -18,20 +18,12 @@ import {
   UsersMotion,
 } from "@/components/motions/Motion";
 
-type Source = {
+const sources: {
   id: string;
   position: string;
   delay: number;
   icon: ReactNode;
-};
-
-type Pipe = {
-  id: string;
-  path: string;
-  delay: number;
-};
-
-const sources: Source[] = [
+}[] = [
   {
     id: "whatsapp",
     position: "start-[20%] top-[25%]",
@@ -52,7 +44,7 @@ const sources: Source[] = [
   },
 ];
 
-const pipes: Pipe[] = [
+const pipes = [
   {
     id: "whatsapp",
     path: "M 135 165 H 205 C 222 165 232 175 232 192 V 250",
@@ -72,7 +64,15 @@ const pipes: Pipe[] = [
 
 const dots = [1, 0.5, 0.35];
 
-function SourceItem({ position, delay, icon }: Omit<Source, "id">) {
+function SourceItem({
+  position,
+  delay,
+  icon,
+}: {
+  position: string;
+  delay: number;
+  icon: ReactNode;
+}) {
   return (
     <SourceMotion
       delay={delay}
@@ -90,7 +90,7 @@ export default function AuthVisual() {
   const isRTL = useLocale() === "ar";
 
   return (
-    <section className="relative hidden min-h-dvh overflow-hidden bg-action-primary-bg lg:flex lg:flex-col lg:items-center">
+    <section className="relative hidden min-h-dvh overflow-hidden bg-primary lg:flex lg:flex-col lg:items-center">
       <div className="relative mt-[8vh] aspect-square w-[88%] max-w-130">
         <BackgroundMotion className="absolute inset-[4%] rounded-full bg-white/8" />
 
@@ -104,9 +104,11 @@ export default function AuthVisual() {
         >
           <PipeGradient />
 
-          {pipes.map((pipe) => (
-            <PipeMotion key={pipe.id} path={pipe.path} delay={pipe.delay} />
-          ))}
+          <g transform={isRTL ? "translate(500 0) scale(-1 1)" : undefined}>
+            {pipes.map(({ id, ...pipe }) => (
+              <PipeMotion key={id} {...pipe} />
+            ))}
+          </g>
         </svg>
 
         {sources.map(({ id, ...source }) => (
@@ -120,8 +122,8 @@ export default function AuthVisual() {
           <Image
             src="/auth/users.png"
             alt={t("imageAlt")}
-            width={1000}
-            height={1000}
+            width={210}
+            height={230}
             priority
             className="h-[230px] w-[210px] object-contain drop-shadow-md"
           />
@@ -135,7 +137,7 @@ export default function AuthVisual() {
 
         <div className="mt-9 flex items-center gap-2">
           {dots.map((opacity, index) => (
-            <DotMotion key={index} opacity={opacity} index={index} />
+            <DotMotion key={opacity} opacity={opacity} index={index} />
           ))}
         </div>
       </ContentMotion>

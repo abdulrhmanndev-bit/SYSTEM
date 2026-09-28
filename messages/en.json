@@ -49,5 +49,74 @@
   "visual": {
     "imageAlt": "Transportation platform",
     "title": "One Platform. Every Transportation Operation."
+  },
+  "navbar": {
+    "platform": "Platform",
+    "solutions": "Solutions",
+    "features": "Features",
+    "resources": "Resources",
+    "about": "About",
+    "login": "Login",
+    "requestDemo": "Request a Demo"
+  },
+  "about": {
+    "hero": {
+      "badge": "About TRANSORA",
+      "title": "We Build the Operating System",
+      "titleSecond": "for Transportation.",
+      "description": "TRANSORA exists to replace fragmented tools with one connected platform so every team that moves people can do it with clarity and control."
+    },
+    "mission": {
+      "badge": "Our Mission",
+      "title": "Make transportation operations simple, connected, and clear.",
+      "description": "Transportation businesses run on coordination between bookings, vehicles, drivers, suppliers, routes, and finances. Too often that coordination lives in spreadsheets, messages, and disconnected systems.",
+      "story": "We started TRANSORA to bring all of it into one place. One platform where a request becomes a trip, a trip becomes a record, and every record becomes insight the whole team can act on."
+    },
+    "principles": {
+      "badge": "What We Believe",
+      "title": "Four Principles That Guide Every Decision.",
+      "clarity": {
+        "title": "Clarity",
+        "description": "Every operation should be visible. We turn scattered activity into one clear, shared picture of what is happening."
+      },
+      "control": {
+        "title": "Control",
+        "description": "Teams do their best work when they are in control. TRANSORA gives operators the tools to run, not react."
+      },
+      "connectivity": {
+        "title": "Connectivity",
+        "description": "Nothing in transportation happens in isolation. We connect people, vehicles, suppliers, and finances on one data layer."
+      },
+      "improvement": {
+        "title": "Continuous Improvement",
+        "description": "Operations evolve. We build for change, so the platform keeps getting better alongside your business."
+      }
+    },
+    "operations": {
+      "title": "Everything Your Transportation Operation Needs.",
+      "bookings": "Bookings",
+      "vehicles": "Vehicles",
+      "drivers": "Drivers",
+      "suppliers": "Suppliers",
+      "accounting": "Accounting"
+    },
+    "network": {
+      "badge": "One Connected Network",
+      "title": "Everything in Transportation,",
+      "titleSecond": "Linked Together.",
+      "customers": "Customers",
+      "drivers": "Drivers",
+      "vehicles": "Vehicles",
+      "suppliers": "Suppliers",
+      "services": "Services",
+      "routes": "Routes",
+      "programs": "Programs",
+      "accounting": "Accounting"
+    },
+    "testimonials": {
+      "badge": "Testimonials",
+      "title": "Some Reviews From Our Customers",
+      "review": "TRANSORA gives our team one clear place to manage transportation operations. Everything is easier to follow, coordinate, and control."
+    }
   }
 }

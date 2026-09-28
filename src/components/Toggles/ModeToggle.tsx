@@ -12,51 +12,50 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const emptySubscribe = () => () => {};
+const subscribe = () => () => {};
+
+const themes = [
+  { value: "light", label: "Light", icon: Sun },
+  { value: "dark", label: "Dark", icon: Moon },
+  { value: "system", label: "System", icon: MonitorCog },
+] as const;
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme();
 
   const mounted = useSyncExternalStore(
-    emptySubscribe,
+    subscribe,
     () => true,
     () => false,
   );
 
-  const ThemeIcon = !mounted
-    ? MonitorCog
-    : theme === "light"
-      ? Sun
-      : theme === "dark"
-        ? Moon
-        : MonitorCog;
+  const currentTheme = mounted
+    ? themes.find(({ value }) => value === theme)
+    : undefined;
+
+  const ThemeIcon = currentTheme?.icon ?? MonitorCog;
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
         render={
-          <Button variant="outline" size="icon">
-            <ThemeIcon className="size-5" />
-            <span className="sr-only">Toggle theme</span>
+          <Button variant="outline" size="icon" aria-label="Toggle theme">
+            <ThemeIcon className="size-4" />
           </Button>
         }
       />
 
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
-          <Sun className="size-4" />
-          Light
-        </DropdownMenuItem>
-
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
-          <Moon className="size-4" />
-          Dark
-        </DropdownMenuItem>
-
-        <DropdownMenuItem onClick={() => setTheme("system")}>
-          <MonitorCog className="size-4" />
-          System
-        </DropdownMenuItem>
+        {themes.map(({ value, label, icon: Icon }) => (
+          <DropdownMenuItem
+            key={value}
+            onClick={() => setTheme(value)}
+            disabled={theme === value}
+          >
+            <Icon className="size-4" />
+            {label}
+          </DropdownMenuItem>
+        ))}
       </DropdownMenuContent>
     </DropdownMenu>
   );

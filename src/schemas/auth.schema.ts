@@ -2,7 +2,7 @@ import { z } from "zod";
 
 type Translate = (key: string) => string;
 
-export const createLoginSchema = (t: Translate) =>
+export const LoginSchema = (t: Translate) =>
   z.object({
     email: z
       .string()
@@ -18,5 +18,5 @@ export const createLoginSchema = (t: Translate) =>
   });
 
 export type LoginFormData = z.infer<
-  ReturnType<typeof createLoginSchema>
+  ReturnType<typeof LoginSchema>
 >;

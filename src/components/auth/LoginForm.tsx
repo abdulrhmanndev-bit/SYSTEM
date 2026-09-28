@@ -3,13 +3,13 @@
 import { useMemo, useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Controller, useForm } from "react-hook-form";
+import { Controller, type SubmitErrorHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Eye, EyeOff, LockKeyhole, Mail } from "lucide-react";
 import { toast } from "sonner";
 
 import { Link } from "@/i18n/navigation";
-import { createLoginSchema, type LoginFormData } from "@/schemas/auth.schema";
+import { LoginSchema, type LoginFormData } from "@/schemas/auth.schema";
 
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -21,15 +21,9 @@ const linkClass =
 
 const iconClass = "size-4 shrink-0 text-text-disabled";
 
-const fieldClass = "space-y-1.5";
-
-const passwordInputClass =
-  "h-full min-w-0 flex-1 border-0 bg-transparent px-3 shadow-none hover:border-0 focus-visible:border-0 focus-visible:ring-0 aria-invalid:border-0 aria-invalid:ring-0";
-
 export default function LoginForm() {
   const t = useTranslations("auth.login");
-  const schema = useMemo(() => createLoginSchema(t), [t]);
-
+  const schema = useMemo(() => LoginSchema(t), [t]);
   const [showPassword, setShowPassword] = useState(false);
 
   const {
@@ -50,25 +44,23 @@ export default function LoginForm() {
     console.log(data);
   };
 
-  const onInvalid = () => {
-    const message = errors.email?.message || errors.password?.message;
+  const onInvalid: SubmitErrorHandler<LoginFormData> = (errors) => {
+    const message = errors.email?.message ?? errors.password?.message;
 
     if (message) toast.error(message);
   };
 
   return (
     <div className="w-full max-w-91.25">
-      <div className="rounded-2xl border border-card-border bg-card-bg px-5 py-7 shadow-sm sm:px-6">
-        <div className="mb-4 flex justify-center">
-          <Image
-            src="/auth/logo.png"
-            alt={t("logoAlt")}
-            width={40}
-            height={40}
-            priority
-            className="size-10 object-contain"
-          />
-        </div>
+      <div className="rounded-2xl border border-border bg-surface px-5 py-7 shadow-sm sm:px-6">
+        <Image
+          src="/auth/logo.png"
+          alt={t("logoAlt")}
+          width={40}
+          height={40}
+          priority
+          className="mx-auto mb-4 size-10 object-contain"
+        />
 
         <header className="mb-7 text-center">
           <h1 className="text-lg font-semibold text-text-primary">
@@ -83,14 +75,15 @@ export default function LoginForm() {
           onSubmit={handleSubmit(onSubmit, onInvalid)}
           className="space-y-4"
         >
-          <div className={fieldClass}>
+          {/* Email */}
+          <div className="space-y-1.5">
             <Label htmlFor="email" className="text-xs text-text-primary">
               {t("email.label")}
             </Label>
 
             <div className="relative">
               <Mail
-                aria-hidden="true"
+                aria-hidden
                 className="pointer-events-none absolute inset-s-3 top-1/2 size-4 -translate-y-1/2 text-text-disabled"
               />
 
@@ -106,16 +99,17 @@ export default function LoginForm() {
             </div>
           </div>
 
-          <div className={fieldClass}>
+          {/* Password */}
+          <div className="space-y-1.5">
             <Label htmlFor="password" className="text-xs text-text-primary">
               {t("password.label")}
             </Label>
 
             <div
               data-invalid={!!errors.password || undefined}
-              className="flex h-10 items-center rounded-md border border-input-border bg-input-bg focus-within:border-input-focus focus-within:ring-3 focus-within:ring-input-focus/20 data-[invalid]:border-border-error data-[invalid]:ring-3 data-[invalid]:ring-status-error-icon/20"
+              className="flex h-10 items-center rounded-md border border-input bg-surface transition-colors focus-within:border-ring focus-within:ring-3 focus-within:ring-ring/20 data-invalid:border-error data-invalid:ring-3 data-invalid:ring-error/20"
             >
-              <LockKeyhole aria-hidden="true" className={`ms-3 ${iconClass}`} />
+              <LockKeyhole aria-hidden className={`ms-3 ${iconClass}`} />
 
               <Input
                 {...register("password")}
@@ -124,14 +118,14 @@ export default function LoginForm() {
                 autoComplete="current-password"
                 placeholder={t("password.placeholder")}
                 aria-invalid={!!errors.password}
-                className={passwordInputClass}
+                className="h-full min-w-0 flex-1 border-0 bg-transparent px-3 shadow-none hover:border-0 focus-visible:border-0 focus-visible:ring-0 aria-invalid:border-0 aria-invalid:ring-0"
               />
 
               <Button
                 type="button"
                 variant="ghost"
                 size="icon"
-                onClick={() => setShowPassword((prev) => !prev)}
+                onClick={() => setShowPassword((value) => !value)}
                 aria-label={
                   showPassword ? t("password.hide") : t("password.show")
                 }
@@ -139,14 +133,15 @@ export default function LoginForm() {
                 className="me-1 size-8 shrink-0 text-text-disabled hover:bg-transparent hover:text-text-secondary"
               >
                 {showPassword ? (
-                  <EyeOff aria-hidden="true" className={iconClass} />
+                  <EyeOff aria-hidden className={iconClass} />
                 ) : (
-                  <Eye aria-hidden="true" className={iconClass} />
+                  <Eye aria-hidden className={iconClass} />
                 )}
               </Button>
             </div>
           </div>
 
+          {/* Remember / Forgot */}
           <div className="flex items-center justify-between gap-4">
             <Controller
               name="remember"

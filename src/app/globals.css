@@ -2,22 +2,18 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* =========================
-   Light Mode
-========================= */
+/* ========================================
+   LIGHT THEME
+======================================== */
 
 :root {
   /* Background */
-  --background-page: #f8fafc;
-  --background-surface: #ffffff;
-  --background-subtle: #f1f5f9;
-  --background-elevated: #ffffff;
-  --background-inverse: #0f172a;
-
-  /* Surface */
+  --background: #f8fafc;
+  --surface: #ffffff;
   --surface-subtle: #f1f5f9;
   --surface-hover: #f8fafc;
   --surface-selected: #eff8ff;
+  --surface-inverse: #0f172a;
 
   /* Text */
   --text-primary: #0f172a;
@@ -28,73 +24,55 @@
   --text-link: #1769aa;
 
   /* Border */
-  --border-default: #e2e8f0;
+  --border: #e2e8f0;
   --border-strong: #cbd5e1;
-  --border-subtle: #f1f5f9;
   --border-focus: #1769aa;
   --border-error: #d64545;
 
-  /* Action Primary */
-  --action-primary-bg: #1769aa;
-  --action-primary-hover: #155a91;
-  --action-primary-active: #104b78;
-  --action-primary-text: #ffffff;
+  /* Primary */
+  --primary: #1769aa;
+  --primary-hover: #155a91;
+  --primary-active: #104b78;
+  --primary-foreground: #ffffff;
 
-  /* Status Success */
-  --status-success-bg: #f0fdf4;
-  --status-success-border: #86efac;
-  --status-success-text: #166534;
-  --status-success-icon: #16a34a;
+  /* Success */
+  --success-bg: #f0fdf4;
+  --success-border: #86efac;
+  --success-text: #166534;
+  --success: #16a34a;
 
-  /* Status Warning */
-  --status-warning-bg: #fffbeb;
-  --status-warning-border: #fde68a;
-  --status-warning-text: #92400e;
-  --status-warning-icon: #f4b740;
+  /* Warning */
+  --warning-bg: #fffbeb;
+  --warning-border: #fde68a;
+  --warning-text: #92400e;
+  --warning: #f4b740;
 
-  /* Status Error */
-  --status-error-bg: #fef2f2;
-  --status-error-border: #fecaca;
-  --status-error-text: #991b1b;
-  --status-error-icon: #d64545;
+  /* Error */
+  --error-bg: #fef2f2;
+  --error-border: #fecaca;
+  --error-text: #991b1b;
+  --error: #d64545;
 
-  /* Status Info */
-  --status-info-bg: #eff8ff;
-  --status-info-border: #b9ddff;
-  --status-info-text: #155a91;
-  --status-info-icon: #1769aa;
+  /* Info */
+  --info-bg: #eff8ff;
+  --info-border: #b9ddff;
+  --info-text: #155a91;
+  --info: #1769aa;
 
   /* Sidebar */
   --sidebar: #0b1f33;
   --sidebar-foreground: #cbd5e1;
   --sidebar-border: #24445d;
-
-  /* Sidebar Item */
-  --sidebar-item-hover: #16344d;
-  --sidebar-item-active: #1769aa;
-  --sidebar-item-active-foreground: #ffffff;
-
-  /* Card */
-  --card-bg: #ffffff;
-  --card-border: #e2e8f0;
-  --card-hover: #f8fafc;
-  --card-selected: #eff8ff;
+  --sidebar-hover: #16344d;
+  --sidebar-active: #1769aa;
+  --sidebar-active-foreground: #ffffff;
 
   /* Input */
-  --input-bg: #ffffff;
   --input-border: #cbd5e1;
-  --input-text: #0f172a;
-  --input-placeholder: #94a3b8;
   --input-hover: #94a3b8;
-  --input-focus: #1769aa;
-  --input-disabled: #f1f5f9;
 
   /* Table */
-  --table-border: #e2e8f0;
-  --table-header-bg: #f8fafc;
-  --table-row-bg: #ffffff;
-  --table-row-hover: #f8fafc;
-  --table-row-selected: #eff8ff;
+  --table-header: #f8fafc;
 
   /* Trip Status */
   --trip-scheduled: #1769aa;
@@ -106,22 +84,18 @@
   --trip-pending: #64748b;
 }
 
-/* =========================
-   Dark Mode
-========================= */
+/* ========================================
+   DARK THEME
+======================================== */
 
 .dark {
   /* Background */
-  --background-page: #0b1220;
-  --background-surface: #111827;
-  --background-subtle: #1e293b;
-  --background-elevated: #111827;
-  --background-inverse: #f8fafc;
-
-  /* Surface */
+  --background: #0b1220;
+  --surface: #111827;
   --surface-subtle: #1e293b;
   --surface-hover: #243244;
   --surface-selected: #123a5a;
+  --surface-inverse: #f8fafc;
 
   /* Text */
   --text-primary: #f8fafc;
@@ -132,116 +106,105 @@
   --text-link: #4fa9df;
 
   /* Border */
-  --border-default: #334155;
+  --border: #334155;
   --border-strong: #475569;
-  --border-subtle: #1e293b;
   --border-focus: #4fa9df;
   --border-error: #76262b;
 
-  /* Action Primary */
-  --action-primary-bg: #2385c8;
-  --action-primary-hover: #4fa9df;
-  --action-primary-active: #1769aa;
-  --action-primary-text: #ffffff;
+  /* Primary */
+  --primary: #2385c8;
+  --primary-hover: #4fa9df;
+  --primary-active: #1769aa;
+  --primary-foreground: #ffffff;
 
-  /* Status Success */
-  --status-success-bg: #0d3328;
-  --status-success-border: #176b52;
-  --status-success-text: #6ee7b7;
-  --status-success-icon: #34d399;
+  /* Success */
+  --success-bg: #0d3328;
+  --success-border: #176b52;
+  --success-text: #6ee7b7;
+  --success: #34d399;
 
-  /* Status Warning */
-  --status-warning-bg: #352a0d;
-  --status-warning-border: #705a1a;
-  --status-warning-text: #fcd34d;
-  --status-warning-icon: #fbbf24;
+  /* Warning */
+  --warning-bg: #352a0d;
+  --warning-border: #705a1a;
+  --warning-text: #fcd34d;
+  --warning: #fbbf24;
 
-  /* Status Error */
-  --status-error-bg: #3a1719;
-  --status-error-border: #76262b;
-  --status-error-text: #fda4af;
-  --status-error-icon: #f87171;
+  /* Error */
+  --error-bg: #3a1719;
+  --error-border: #76262b;
+  --error-text: #fda4af;
+  --error: #f87171;
 
-  /* Status Info */
-  --status-info-bg: #122b4a;
-  --status-info-border: #28558a;
-  --status-info-text: #93c5fd;
-  --status-info-icon: #60a5fa;
+  /* Info */
+  --info-bg: #122b4a;
+  --info-border: #28558a;
+  --info-text: #93c5fd;
+  --info: #60a5fa;
 
   /* Sidebar */
   --sidebar: #080f1a;
   --sidebar-foreground: #94a3b8;
   --sidebar-border: #263548;
-
-  /* Sidebar Item */
-  --sidebar-item-hover: #172436;
-  --sidebar-item-active: #155a91;
-  --sidebar-item-active-foreground: #ffffff;
-
-  /* Card */
-  --card-bg: #111827;
-  --card-border: #263548;
-  --card-hover: #172436;
-  --card-selected: #123a5a;
+  --sidebar-hover: #172436;
+  --sidebar-active: #155a91;
+  --sidebar-active-foreground: #ffffff;
 
   /* Input */
-  --input-bg: #111827;
   --input-border: #475569;
-  --input-text: #f8fafc;
-  --input-placeholder: #64748b;
   --input-hover: #64748b;
-  --input-focus: #4fa9df;
-  --input-disabled: #1e293b;
 
   /* Table */
-  --table-border: #263548;
-  --table-header-bg: #172131;
-  --table-row-bg: #111827;
-  --table-row-hover: #172436;
-  --table-row-selected: #123a5a;
+  --table-header: #172131;
+
+  /* Trip Status */
+  --trip-scheduled: #4fa9df;
+  --trip-assigned: #22d3ee;
+  --trip-in-progress: #34d399;
+  --trip-completed: #4ade80;
+  --trip-delayed: #fbbf24;
+  --trip-cancelled: #f87171;
+  --trip-pending: #94a3b8;
 }
 
-/* =========================
-   Tailwind Theme
-========================= */
+/* ========================================
+   TAILWIND THEME
+======================================== */
 
 @theme inline {
-  /* Shadcn Core */
-  --color-background: var(--background-page);
+  /* Shadcn */
+  --color-background: var(--background);
   --color-foreground: var(--text-primary);
 
-  --color-primary: var(--action-primary-bg);
-  --color-primary-foreground: var(--action-primary-text);
+  --color-card: var(--surface);
+  --color-card-foreground: var(--text-primary);
 
-  --color-secondary: var(--background-subtle);
+  --color-popover: var(--surface);
+  --color-popover-foreground: var(--text-primary);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--surface-subtle);
   --color-secondary-foreground: var(--text-primary);
 
-  --color-muted: var(--background-subtle);
+  --color-muted: var(--surface-subtle);
   --color-muted-foreground: var(--text-tertiary);
 
   --color-accent: var(--surface-hover);
   --color-accent-foreground: var(--text-primary);
 
-  --color-popover: var(--background-elevated);
-  --color-popover-foreground: var(--text-primary);
+  --color-destructive: var(--error);
 
-  --color-border: var(--border-default);
+  --color-border: var(--border);
   --color-input: var(--input-border);
   --color-ring: var(--border-focus);
 
-  --color-destructive: var(--status-error-icon);
-
-  /* Background */
-  --color-background-page: var(--background-page);
-  --color-background-surface: var(--background-surface);
-  --color-background-subtle: var(--background-subtle);
-  --color-background-elevated: var(--background-elevated);
-  --color-background-inverse: var(--background-inverse);
-
   /* Surface */
+  --color-surface: var(--surface);
   --color-surface-subtle: var(--surface-subtle);
   --color-surface-hover: var(--surface-hover);
   --color-surface-selected: var(--surface-selected);
+  --color-surface-inverse: var(--surface-inverse);
 
   /* Text */
   --color-text-primary: var(--text-primary);
@@ -252,73 +215,51 @@
   --color-text-link: var(--text-link);
 
   /* Border */
-  --color-border-default: var(--border-default);
   --color-border-strong: var(--border-strong);
-  --color-border-subtle: var(--border-subtle);
   --color-border-focus: var(--border-focus);
   --color-border-error: var(--border-error);
 
-  /* Action Primary */
-  --color-action-primary-bg: var(--action-primary-bg);
-  --color-action-primary-hover: var(--action-primary-hover);
-  --color-action-primary-active: var(--action-primary-active);
-  --color-action-primary-text: var(--action-primary-text);
+  /* Primary */
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-active: var(--primary-active);
 
-  /* Status Success */
-  --color-status-success-bg: var(--status-success-bg);
-  --color-status-success-border: var(--status-success-border);
-  --color-status-success-text: var(--status-success-text);
-  --color-status-success-icon: var(--status-success-icon);
+  /* Success */
+  --color-success: var(--success);
+  --color-success-bg: var(--success-bg);
+  --color-success-border: var(--success-border);
+  --color-success-text: var(--success-text);
 
-  /* Status Warning */
-  --color-status-warning-bg: var(--status-warning-bg);
-  --color-status-warning-border: var(--status-warning-border);
-  --color-status-warning-text: var(--status-warning-text);
-  --color-status-warning-icon: var(--status-warning-icon);
+  /* Warning */
+  --color-warning: var(--warning);
+  --color-warning-bg: var(--warning-bg);
+  --color-warning-border: var(--warning-border);
+  --color-warning-text: var(--warning-text);
 
-  /* Status Error */
-  --color-status-error-bg: var(--status-error-bg);
-  --color-status-error-border: var(--status-error-border);
-  --color-status-error-text: var(--status-error-text);
-  --color-status-error-icon: var(--status-error-icon);
+  /* Error */
+  --color-error: var(--error);
+  --color-error-bg: var(--error-bg);
+  --color-error-border: var(--error-border);
+  --color-error-text: var(--error-text);
 
-  /* Status Info */
-  --color-status-info-bg: var(--status-info-bg);
-  --color-status-info-border: var(--status-info-border);
-  --color-status-info-text: var(--status-info-text);
-  --color-status-info-icon: var(--status-info-icon);
+  /* Info */
+  --color-info: var(--info);
+  --color-info-bg: var(--info-bg);
+  --color-info-border: var(--info-border);
+  --color-info-text: var(--info-text);
 
   /* Sidebar */
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar-border: var(--sidebar-border);
-
-  /* Sidebar Item */
-  --color-sidebar-item-hover: var(--sidebar-item-hover);
-  --color-sidebar-item-active: var(--sidebar-item-active);
-  --color-sidebar-item-active-foreground: var(--sidebar-item-active-foreground);
-
-  /* Card */
-  --color-card-bg: var(--card-bg);
-  --color-card-border: var(--card-border);
-  --color-card-hover: var(--card-hover);
-  --color-card-selected: var(--card-selected);
+  --color-sidebar-hover: var(--sidebar-hover);
+  --color-sidebar-active: var(--sidebar-active);
+  --color-sidebar-active-foreground: var(--sidebar-active-foreground);
 
   /* Input */
-  --color-input-bg: var(--input-bg);
-  --color-input-border: var(--input-border);
-  --color-input-text: var(--input-text);
-  --color-input-placeholder: var(--input-placeholder);
   --color-input-hover: var(--input-hover);
-  --color-input-focus: var(--input-focus);
-  --color-input-disabled: var(--input-disabled);
 
   /* Table */
-  --color-table-border: var(--table-border);
-  --color-table-header-bg: var(--table-header-bg);
-  --color-table-row-bg: var(--table-row-bg);
-  --color-table-row-hover: var(--table-row-hover);
-  --color-table-row-selected: var(--table-row-selected);
+  --color-table-header: var(--table-header);
 
   /* Trip Status */
   --color-trip-scheduled: var(--trip-scheduled);
@@ -334,12 +275,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* =========================
-   Base
-========================= */
+/* ========================================
+   BASE
+======================================== */
 
 body {
-  background: var(--background-page);
+  background: var(--background);
   color: var(--text-primary);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }

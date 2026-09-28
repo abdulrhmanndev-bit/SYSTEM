@@ -48,5 +48,74 @@
   "visual": {
     "imageAlt": "Ulaşım platformu",
     "title": "Tek Platform. Tüm Ulaşım Operasyonları."
+  },
+  "navbar": {
+    "platform": "Platform",
+    "solutions": "Çözümler",
+    "features": "Özellikler",
+    "resources": "Kaynaklar",
+    "about": "Hakkımızda",
+    "login": "Giriş Yap",
+    "requestDemo": "Demo Talep Et"
+  },
+  "about": {
+    "hero": {
+      "badge": "TRANSORA Hakkında",
+      "title": "Ulaşım İçin İşletim",
+      "titleSecond": "Sistemini İnşa Ediyoruz.",
+      "description": "TRANSORA, dağınık araçların yerini tek bir bağlantılı platformla almak için var; böylece insan taşımacılığı yapan her ekip netlik ve kontrolle çalışabilir."
+    },
+    "mission": {
+      "badge": "Misyonumuz",
+      "title": "Ulaşım operasyonlarını basit, bağlantılı ve anlaşılır hale getirmek.",
+      "description": "Ulaşım işletmeleri; rezervasyonlar, araçlar, sürücüler, tedarikçiler, rotalar ve finans arasındaki koordinasyonla çalışır. Ancak bu koordinasyon çoğu zaman elektronik tablolar, mesajlar ve birbirinden kopuk sistemler arasında dağılır.",
+      "story": "TRANSORA'yı tüm bunları tek bir yerde bir araya getirmek için kurduk. Bir talebin yolculuğa, yolculuğun kayda ve her kaydın tüm ekibin harekete geçebileceği bir içgörüye dönüştüğü tek bir platform."
+    },
+    "principles": {
+      "badge": "Neye İnanıyoruz",
+      "title": "Her Kararımıza Yön Veren Dört İlke.",
+      "clarity": {
+        "title": "Netlik",
+        "description": "Her operasyon görünür olmalıdır. Dağınık faaliyetleri, olup biteni gösteren tek ve net bir ortak görünüme dönüştürüyoruz."
+      },
+      "control": {
+        "title": "Kontrol",
+        "description": "Ekipler kontrol sahibi olduklarında en iyi şekilde çalışır. TRANSORA, operatörlere tepki vermek yerine operasyonları yönetmeleri için gereken araçları sunar."
+      },
+      "connectivity": {
+        "title": "Bağlantı",
+        "description": "Ulaşımda hiçbir şey birbirinden bağımsız gerçekleşmez. İnsanları, araçları, tedarikçileri ve finansal süreçleri tek bir veri katmanında birleştiriyoruz."
+      },
+      "improvement": {
+        "title": "Sürekli İyileştirme",
+        "description": "Operasyonlar sürekli gelişir. Platformu değişime uyum sağlayacak ve işletmenizle birlikte gelişmeye devam edecek şekilde oluşturuyoruz."
+      }
+    },
+    "operations": {
+      "title": "Ulaşım Operasyonunuzun İhtiyaç Duyduğu Her Şey.",
+      "bookings": "Rezervasyonlar",
+      "vehicles": "Araçlar",
+      "drivers": "Sürücüler",
+      "suppliers": "Tedarikçiler",
+      "accounting": "Muhasebe"
+    },
+    "network": {
+      "badge": "Tek Bağlantılı Ağ",
+      "title": "Ulaşımdaki Her Şey,",
+      "titleSecond": "Birbirine Bağlı.",
+      "customers": "Müşteriler",
+      "drivers": "Sürücüler",
+      "vehicles": "Araçlar",
+      "suppliers": "Tedarikçiler",
+      "services": "Hizmetler",
+      "routes": "Rotalar",
+      "programs": "Programlar",
+      "accounting": "Muhasebe"
+    },
+    "testimonials": {
+      "badge": "Müşteri Yorumları",
+      "title": "Müşterilerimizden Bazı Yorumlar",
+      "review": "TRANSORA, ekibimize ulaşım operasyonlarını yönetmek için tek ve net bir alan sunuyor. Takip, koordinasyon ve kontrol artık çok daha kolay."
+    }
   }
 }
