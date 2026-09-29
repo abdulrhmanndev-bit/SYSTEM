@@ -10,7 +10,7 @@ import {
   ScrollText,
   Users,
 } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { motion } from "motion/react";
 
 import MainFlex from "@/components/shared/MainFlex";
@@ -53,19 +53,27 @@ function CenterNode({ animated = false }: { animated?: boolean }) {
   const className =
     "flex size-20 flex-col items-center justify-center rounded-2xl bg-surface-inverse text-text-inverse";
 
-  if (!animated) return <div className={className}>{content}</div>;
+  if (!animated) {
+    return <div className={className}>{content}</div>;
+  }
 
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.85 }}
-      animate={{ opacity: 1, scale: 1 }}
+      initial={{
+        opacity: 0,
+        scale: 0.85,
+      }}
+      animate={{
+        opacity: 1,
+        scale: 1,
+      }}
       transition={{
         type: "spring",
         stiffness: 220,
         damping: 18,
         delay: 0.2,
       }}
-      className={`absolute inset-s-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 shadow-lg rtl:translate-x-1/2 ${className}`}
+      className={`absolute start-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 shadow-lg rtl:translate-x-1/2 ${className}`}
     >
       {content}
     </motion.div>
@@ -74,18 +82,23 @@ function CenterNode({ animated = false }: { animated?: boolean }) {
 
 export default function NetworkSection() {
   const t = useTranslations("about.network");
+  const locale = useLocale();
+
+  const isRTL = locale === "ar";
 
   return (
     <section className="bg-background">
       <MainFlex>
         <div className="py-16 lg:py-20">
+          {/* Header */}
           <div className="flex flex-col items-center text-center">
-            <div className="inline-flex items-center gap-2 rounded-full bg-info-bg px-3 py-1">
-              <span className="size-1.5 rounded-full bg-trip-assigned" />
-              <span className="text-[12px] font-medium text-info-text">
-                {t("badge")}
-              </span>
-            </div>
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1">
+            <span className="size-1.5 rounded-full bg-trip-assigned" />
+
+            <span className="text-[12px] font-medium text-info-text">
+              {t("badge")}
+            </span>
+          </div>
 
             <h2 className="mt-5 max-w-xl text-3xl leading-tight font-bold tracking-tight text-text-primary lg:text-[32px]">
               {t("title")}
@@ -94,15 +107,20 @@ export default function NetworkSection() {
             </h2>
           </div>
 
+          {/* Desktop Network */}
           <div className="relative mt-12 hidden h-80 overflow-hidden rounded-2xl border border-info-border bg-info-bg shadow-sm md:block">
             <svg
               viewBox="0 0 1000 320"
               preserveAspectRatio="none"
               aria-hidden="true"
               className="pointer-events-none absolute inset-0 size-full"
+              style={{
+                transform: isRTL ? "scaleX(-1)" : undefined,
+              }}
             >
               {paths.map((path, index) => (
                 <g key={path}>
+                  {/* Base Line */}
                   <path
                     d={path}
                     fill="none"
@@ -113,6 +131,7 @@ export default function NetworkSection() {
                     className="text-info"
                   />
 
+                  {/* Animated Flow */}
                   <motion.path
                     d={path}
                     fill="none"
@@ -120,8 +139,12 @@ export default function NetworkSection() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeDasharray="18 28"
-                    initial={{ strokeDashoffset: 46 }}
-                    animate={{ strokeDashoffset: -46 }}
+                    initial={{
+                      strokeDashoffset: 46,
+                    }}
+                    animate={{
+                      strokeDashoffset: -46,
+                    }}
                     transition={{
                       duration: 2.6,
                       delay: index * 0.12,
@@ -136,11 +159,20 @@ export default function NetworkSection() {
 
             <CenterNode animated />
 
+            {/* Nodes */}
             {nodes.map(([key, Icon, position], index) => (
               <motion.div
                 key={key}
-                initial={{ opacity: 0, scale: 0.92, y: 8 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
+                initial={{
+                  opacity: 0,
+                  scale: 0.92,
+                  y: 8,
+                }}
+                animate={{
+                  opacity: 1,
+                  scale: 1,
+                  y: 0,
+                }}
                 transition={{
                   duration: 0.4,
                   delay: 0.35 + index * 0.08,
@@ -155,6 +187,7 @@ export default function NetworkSection() {
             ))}
           </div>
 
+          {/* Mobile Network */}
           <div className="mt-10 grid grid-cols-2 gap-3 md:hidden">
             <div className="col-span-2 mb-2 flex justify-center">
               <CenterNode />
