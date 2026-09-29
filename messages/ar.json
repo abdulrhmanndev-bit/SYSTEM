@@ -116,6 +116,49 @@
       "badge": "آراء العملاء",
       "title": "بعض آراء عملائنا",
       "review": "تمنح TRANSORA فريقنا مكانًا واحدًا وواضحًا لإدارة عمليات النقل، مما يجعل متابعة العمليات والتنسيق والتحكم فيها أكثر سهولة."
+    },
+    "cta": {
+      "title": "هل انت مستعد لبناء مستقبل النقل معنا؟",
+      "description": "اكتشف كيف تساعدك TRANSORA على تبسيط الحجوزات والعمليات وإدارة الأسطول والرؤية المالية.",
+      "button": "احجز عرضًا تجريبيًا"
     }
+  },
+  "footer": {
+    "description": "إدارة متكاملة لعمليات النقل، من الحجز وحتى الوصول.",
+
+    "platform": {
+      "title": "المنصة",
+      "bookings": "الحجوزات",
+      "fleetManagement": "إدارة الأسطول",
+      "driverManagement": "إدارة السائقين",
+      "supplierManagement": "إدارة الموردين",
+      "analytics": "التحليلات"
+    },
+
+    "solutions": {
+      "title": "الحلول",
+      "transportationCompanies": "شركات النقل",
+      "travelOperators": "منظمو الرحلات",
+      "fleetManagers": "مديرو الأساطيل",
+      "operationsTeams": "فرق العمليات"
+    },
+
+    "company": {
+      "title": "الشركة",
+      "about": "من نحن",
+      "contact": "تواصل معنا",
+      "requestDemo": "اطلب عرضًا تجريبيًا"
+    },
+
+    "resources": {
+      "title": "المصادر",
+      "documentation": "التوثيق",
+      "helpCenter": "مركز المساعدة",
+      "blog": "المدونة"
+    },
+
+    "copyright": "TRANSORA. جميع الحقوق محفوظة.",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsOfService": "شروط الخدمة"
   }
 }

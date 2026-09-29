@@ -68,7 +68,7 @@ export default function Navbar() {
                   key={key}
                   href={href}
                   className={cn(
-                    "text-sm transition-colors hover:text-text-primary",
+                    "text-sm transition-colors hover:text-primary",
                     isActive
                       ? "font-medium text-primary"
                       : "text-text-secondary",
@@ -84,21 +84,12 @@ export default function Navbar() {
           <div className="flex shrink-0 items-center gap-2">
             <Link
               href="/login"
-              className={cn(
-                buttonVariants({ variant: "ghost" }),
-                "hidden text-sm text-text-secondary sm:inline-flex",
-              )}
+              className={cn(buttonVariants({ variant: "ghost" }))}
             >
               {t("login")}
             </Link>
 
-            <Link
-              href="/request-demo"
-              className={cn(
-                buttonVariants(),
-                "hidden h-10 px-5 text-sm sm:inline-flex",
-              )}
-            >
+            <Link href="/request-demo" className={cn(buttonVariants())}>
               {t("requestDemo")}
             </Link>
 

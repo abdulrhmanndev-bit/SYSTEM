@@ -1,12 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import {
   BusFront,
   Calculator,
   ContactRound,
   Grid2X2,
   IdCard,
-  Route,
   ScrollText,
   Users,
 } from "lucide-react";
@@ -23,7 +23,7 @@ const nodes = [
   ["vehicles", BusFront, "end-[11%] top-[13%]"],
   ["suppliers", ScrollText, "start-[22%] top-[43%]"],
   ["services", Grid2X2, "end-[21%] top-[43%]"],
-  ["routes", Route, "start-[11%] bottom-[12%]"],
+  ["routes", ContactRound, "start-[11%] bottom-[12%]"],
   ["programs", ContactRound, "start-[45%] bottom-[7%]"],
   ["accounting", Calculator, "end-[4%] bottom-[14%]"],
 ] as const;
@@ -42,38 +42,39 @@ const paths = [
 const nodeClass =
   "flex items-center gap-2 border border-border bg-surface text-text-primary";
 
+const centerClass =
+  "flex size-20 flex-col items-center justify-center rounded-2xl bg-surface-inverse text-text-inverse";
+
 function CenterNode({ animated = false }: { animated?: boolean }) {
   const content = (
     <>
-      <Route className="size-5 text-info" />
+      <Image
+        src="/about/linked.png"
+        alt=""
+        width={32}
+        height={32}
+        className="size-8 object-center"
+      />
+
       <span className="mt-2 text-[9px] font-semibold">TRANSORA</span>
     </>
   );
 
-  const className =
-    "flex size-20 flex-col items-center justify-center rounded-2xl bg-surface-inverse text-text-inverse";
-
   if (!animated) {
-    return <div className={className}>{content}</div>;
+    return <div className={centerClass}>{content}</div>;
   }
 
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-        scale: 0.85,
-      }}
-      animate={{
-        opacity: 1,
-        scale: 1,
-      }}
+      initial={{ opacity: 0, scale: 0.85 }}
+      animate={{ opacity: 1, scale: 1 }}
       transition={{
         type: "spring",
         stiffness: 220,
         damping: 18,
         delay: 0.2,
       }}
-      className={`absolute start-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 shadow-lg rtl:translate-x-1/2 ${className}`}
+      className={`absolute start-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 shadow-lg rtl:translate-x-1/2 ${centerClass}`}
     >
       {content}
     </motion.div>
@@ -82,23 +83,17 @@ function CenterNode({ animated = false }: { animated?: boolean }) {
 
 export default function NetworkSection() {
   const t = useTranslations("about.network");
-  const locale = useLocale();
-
-  const isRTL = locale === "ar";
+  const isRTL = useLocale() === "ar";
 
   return (
     <section className="bg-background">
       <MainFlex>
         <div className="py-16 lg:py-20">
-          {/* Header */}
           <div className="flex flex-col items-center text-center">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1">
-            <span className="size-1.5 rounded-full bg-trip-assigned" />
-
-            <span className="text-[12px] font-medium text-info-text">
-              {t("badge")}
-            </span>
-          </div>
+            <div className="section-badge">
+              <span className="section-badge-dot" />
+              <span className="section-badge-text">{t("badge")}</span>
+            </div>
 
             <h2 className="mt-5 max-w-xl text-3xl leading-tight font-bold tracking-tight text-text-primary lg:text-[32px]">
               {t("title")}
@@ -107,8 +102,7 @@ export default function NetworkSection() {
             </h2>
           </div>
 
-          {/* Desktop Network */}
-          <div className="relative mt-12 hidden h-80 overflow-hidden rounded-2xl border border-info-border bg-info-bg shadow-sm md:block">
+          <div className="relative mt-12 hidden h-80 overflow-hidden rounded-2xl border border-info-border bg-linear-to-r from-primary/25 to-trip-assigned/25 shadow-sm md:block">
             <svg
               viewBox="0 0 1000 320"
               preserveAspectRatio="none"
@@ -120,31 +114,24 @@ export default function NetworkSection() {
             >
               {paths.map((path, index) => (
                 <g key={path}>
-                  {/* Base Line */}
                   <path
                     d={path}
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="1.2"
-                    strokeDasharray="5 5"
                     opacity="0.22"
                     className="text-info"
                   />
 
-                  {/* Animated Flow */}
                   <motion.path
                     d={path}
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="2"
                     strokeLinecap="round"
-                    strokeDasharray="18 28"
-                    initial={{
-                      strokeDashoffset: 46,
-                    }}
-                    animate={{
-                      strokeDashoffset: -46,
-                    }}
+                    strokeDasharray="5 10"
+                    initial={{ strokeDashoffset: 15 }}
+                    animate={{ strokeDashoffset: -15 }}
                     transition={{
                       duration: 2.6,
                       delay: index * 0.12,
@@ -159,20 +146,11 @@ export default function NetworkSection() {
 
             <CenterNode animated />
 
-            {/* Nodes */}
             {nodes.map(([key, Icon, position], index) => (
               <motion.div
                 key={key}
-                initial={{
-                  opacity: 0,
-                  scale: 0.92,
-                  y: 8,
-                }}
-                animate={{
-                  opacity: 1,
-                  scale: 1,
-                  y: 0,
-                }}
+                initial={{ opacity: 0, scale: 0.92, y: 8 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{
                   duration: 0.4,
                   delay: 0.35 + index * 0.08,
@@ -187,7 +165,6 @@ export default function NetworkSection() {
             ))}
           </div>
 
-          {/* Mobile Network */}
           <div className="mt-10 grid grid-cols-2 gap-3 md:hidden">
             <div className="col-span-2 mb-2 flex justify-center">
               <CenterNode />

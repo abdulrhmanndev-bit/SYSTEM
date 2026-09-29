@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
 import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 type Props = {
   children: React.ReactNode;
@@ -22,6 +23,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <Navbar />
 
         <main className="flex-1">{children}</main>
+        <Footer/>
       </div>
       
     </NextIntlClientProvider>

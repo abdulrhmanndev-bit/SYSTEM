@@ -283,4 +283,19 @@ body {
   background: var(--background);
   color: var(--text-primary);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+@layer components {
+  .section-badge {
+    @apply inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 mb-6;
+  }
+
+  .section-badge-dot {
+    @apply size-1.5 rounded-full bg-trip-assigned;
+  }
+
+  .section-badge-text {
+    @apply text-xs font-medium text-info-text;
+  }
 }

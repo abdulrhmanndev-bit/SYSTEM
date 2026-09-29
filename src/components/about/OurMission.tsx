@@ -9,16 +9,13 @@ export default function MissionSection() {
   return (
     <section className="bg-info-bg">
       <MainFlex>
-        <div className="grid min-h-96 items-center gap-12 py-16 lg:grid-cols-2 lg:gap-16">
+        <div className="grid  items-center  py-16 lg:grid-cols-2 lg:gap-16">
           {/* Content */}
           <div className="max-w-xl">
             {/* Badge */}
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1">
-              <span className="size-1.5 rounded-full bg-trip-assigned" />
-
-              <span className="text-[12px] font-medium text-info-text">
-                {t("badge")}
-              </span>
+            <div className="section-badge">
+              <span className="section-badge-dot" />
+              <span className="section-badge-text">{t("badge")}</span>
             </div>
 
             {/* Title */}

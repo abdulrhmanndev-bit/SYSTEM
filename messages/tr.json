@@ -116,6 +116,48 @@
       "badge": "Müşteri Yorumları",
       "title": "Müşterilerimizden Bazı Yorumlar",
       "review": "TRANSORA, ekibimize ulaşım operasyonlarını yönetmek için tek ve net bir alan sunuyor. Takip, koordinasyon ve kontrol artık çok daha kolay."
+    },
+    "cta": {
+      "title": "Ulaşımın geleceğini bizimle inşa etmek ister misiniz?",
+      "description": "TRANSORA'nın rezervasyonları, operasyonları, filo yönetimini ve finansal görünürlüğü nasıl kolaylaştırdığını keşfedin.",
+      "button": "Demo Talep Et"
     }
+  }, "footer": {
+    "description": "Rezervasyondan varışa kadar eksiksiz ulaşım yönetimi.",
+
+    "platform": {
+      "title": "Platform",
+      "bookings": "Rezervasyonlar",
+      "fleetManagement": "Filo Yönetimi",
+      "driverManagement": "Sürücü Yönetimi",
+      "supplierManagement": "Tedarikçi Yönetimi",
+      "analytics": "Analizler"
+    },
+
+    "solutions": {
+      "title": "Çözümler",
+      "transportationCompanies": "Ulaşım Şirketleri",
+      "travelOperators": "Seyahat Operatörleri",
+      "fleetManagers": "Filo Yöneticileri",
+      "operationsTeams": "Operasyon Ekipleri"
+    },
+
+    "company": {
+      "title": "Şirket",
+      "about": "Hakkımızda",
+      "contact": "İletişim",
+      "requestDemo": "Demo Talep Et"
+    },
+
+    "resources": {
+      "title": "Kaynaklar",
+      "documentation": "Dokümantasyon",
+      "helpCenter": "Yardım Merkezi",
+      "blog": "Blog"
+    },
+
+    "copyright": "© 2026 TRANSORA. Tüm hakları saklıdır.",
+    "privacyPolicy": "Gizlilik Politikası",
+    "termsOfService": "Kullanım Koşulları"
   }
 }

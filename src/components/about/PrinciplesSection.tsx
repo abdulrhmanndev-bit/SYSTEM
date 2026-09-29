@@ -35,13 +35,10 @@ export default function PrinciplesSection() {
         <div className="py-16 lg:py-20">
           {/* Header */}
           <div className="flex flex-col items-center text-center">
-            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1">
-              <span className="size-1.5 rounded-full bg-trip-assigned" />
-
-              <span className="text-[12px] font-medium text-info-text">
-                {t("badge")}
-              </span>
-            </div>
+          <div className="section-badge">
+            <span className="section-badge-dot" />
+            <span className="section-badge-text">{t("badge")}</span>
+          </div>
 
             <h2 className="mt-5 text-3xl leading-tight font-bold tracking-tight text-text-primary lg:text-[32px]">
               {t("title")}

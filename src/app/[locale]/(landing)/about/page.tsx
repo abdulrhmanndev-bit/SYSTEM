@@ -5,6 +5,7 @@ import PrinciplesSection from "@/components/about/PrinciplesSection";
 import OperationsSection from "@/components/about/OperationsSection";
 import NetworkSection from "@/components/about/NetworkSection";
 import TestimonialsSection from "@/components/about/TestimonialsSection";
+import CTASection from "@/components/about/CTASection";
 
 export default function page() {
   return (
@@ -15,6 +16,7 @@ export default function page() {
       <OperationsSection/>
       <NetworkSection/>
       <TestimonialsSection/>
+      <CTASection/>
     </div>
   );
 }

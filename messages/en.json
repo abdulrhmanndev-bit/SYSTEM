@@ -117,6 +117,49 @@
       "badge": "Testimonials",
       "title": "Some Reviews From Our Customers",
       "review": "TRANSORA gives our team one clear place to manage transportation operations. Everything is easier to follow, coordinate, and control."
+    },
+    "cta": {
+      "title": "Want to build the future of transportation with us?",
+      "description": "See how TRANSORA can simplify bookings, operations, fleet management, and financial visibility.",
+      "button": "Book a Demo"
     }
+  },
+  "footer": {
+    "description": "Complete transportation management, from booking to arrival.",
+
+    "platform": {
+      "title": "Platform",
+      "bookings": "Bookings",
+      "fleetManagement": "Fleet Management",
+      "driverManagement": "Driver Management",
+      "supplierManagement": "Supplier Management",
+      "analytics": "Analytics"
+    },
+
+    "solutions": {
+      "title": "Solutions",
+      "transportationCompanies": "Transportation Companies",
+      "travelOperators": "Travel Operators",
+      "fleetManagers": "Fleet Managers",
+      "operationsTeams": "Operations Teams"
+    },
+
+    "company": {
+      "title": "Company",
+      "about": "About",
+      "contact": "Contact",
+      "requestDemo": "Request a Demo"
+    },
+
+    "resources": {
+      "title": "Resources",
+      "documentation": "Documentation",
+      "helpCenter": "Help Center",
+      "blog": "Blog"
+    },
+
+    "copyright": "TRANSORA. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
   }
 }

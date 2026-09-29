@@ -2,22 +2,19 @@
 
 import { useTranslations } from "next-intl";
 
-import  MainFlex  from "@/components/shared/MainFlex";
+import MainFlex from "@/components/shared/MainFlex";
 
 export default function HeroSection() {
   const t = useTranslations("about.hero");
 
   return (
-    <section className="bg-background mt-20">
+    <section className="bg-background ">
       <MainFlex>
-        <div className="flex  w-full flex-col items-center justify-center py-16 text-center">
+        <div className="flex   flex-col items-center justify-center py-36 text-center">
           {/* Badge */}
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1">
-            <span className="size-1.5 rounded-full bg-trip-assigned" />
-
-            <span className="text-[12px] font-medium text-info-text">
-              {t("badge")}
-            </span>
+          <div className="section-badge">
+            <span className="section-badge-dot" />
+            <span className="section-badge-text">{t("badge")}</span>
           </div>
 
           {/* Title */}
