@@ -161,5 +161,39 @@
     "copyright": "TRANSORA. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
+  },
+  "resources": {
+    "hero": {
+      "badge": "Resources",
+      "title": "Ideas, Guides, and Playbooks for",
+      "titleSecond": "Transportation Teams.",
+      "description": "Practical thinking on running connected operations — from dispatch and fleet to pricing and finance."
+    },
+    "featured": {
+      "badge": "Featured · Operations",
+      "title": "The Operator’s Guide to Running Transportation on One Platform",
+      "description": "How connected operations replace fragmented tools — and what changes for dispatch, fleet, and finance when every trip lives in one system.",
+      "date": "Sep 2026",
+      "readTime": "8 min read",
+      "readArticle": "Read article",
+      "imageAlt": "Connected transportation operations platform"
+    },
+    "articles": {
+      "filters": {
+        "all": "All",
+        "operations": "Operations",
+        "fleet": "Fleet",
+        "product": "Product",
+        "guides": "Guides",
+        "industry": "Industry"
+      }
+    },
+    "newsletter": {
+      "title": "Get transportation operations insights in",
+      "titleSecond": "your inbox.",
+      "description": "One thoughtful email a month. No noise, unsubscribe anytime.",
+      "placeholder": "you@company.com",
+      "button": "Subscribe"
+    }
   }
 }

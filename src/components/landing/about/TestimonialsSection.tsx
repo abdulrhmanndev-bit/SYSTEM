@@ -43,7 +43,7 @@ export default function TestimonialsSection() {
               <span className="section-badge-text">{t("badge")}</span>
             </div>
 
-            <h2 className="mt-5 text-3xl font-bold leading-tight tracking-tight text-text-primary">
+            <h2 className=" text-3xl font-bold leading-tight tracking-tight text-text-primary">
               {t("title")}
             </h2>
           </div>
@@ -65,13 +65,13 @@ export default function TestimonialsSection() {
                 >
                   <Card className="h-44 gap-0 rounded-2xl bg-linear-to-r from-primary/25 to-trip-assigned/25 p-0 shadow-none">
                     <div className="flex h-full">
-                      <div className="relative top-4 -end-2 w-[35%] shrink-0">
+                      <div className="flex w-[35%] shrink-0 items-end justify-center">
                         <Image
                           src={image}
                           alt={name}
-                          width={120}
-                          height={160}
-                          className="h-40 w-30 object-contain object-bottom"
+                          width={130}
+                          height={118}
+                          className="max-w-30"
                         />
                       </div>
 

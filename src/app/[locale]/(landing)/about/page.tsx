@@ -1,11 +1,11 @@
 import React from "react";
-import HeroSection from "@/components/about/HeroSection";
-import OurMission from "@/components/about/OurMission";
-import PrinciplesSection from "@/components/about/PrinciplesSection";
-import OperationsSection from "@/components/about/OperationsSection";
-import NetworkSection from "@/components/about/NetworkSection";
-import TestimonialsSection from "@/components/about/TestimonialsSection";
-import CTASection from "@/components/about/CTASection";
+import HeroSection from "@/components/landing/about/HeroSection";
+import OurMission from "@/components/landing/about/OurMission";
+import PrinciplesSection from "@/components/landing/about/PrinciplesSection";
+import OperationsSection from "@/components/landing/about/OperationsSection";
+import NetworkSection from "@/components/landing/about/NetworkSection";
+import TestimonialsSection from "@/components/landing/about/TestimonialsSection";
+import CTASection from "@/components/landing/about/CTASection";
 
 export default function page() {
   return (

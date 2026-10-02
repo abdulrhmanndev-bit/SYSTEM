@@ -122,7 +122,8 @@
       "description": "TRANSORA'nın rezervasyonları, operasyonları, filo yönetimini ve finansal görünürlüğü nasıl kolaylaştırdığını keşfedin.",
       "button": "Demo Talep Et"
     }
-  }, "footer": {
+  },
+  "footer": {
     "description": "Rezervasyondan varışa kadar eksiksiz ulaşım yönetimi.",
 
     "platform": {
@@ -159,5 +160,39 @@
     "copyright": "© 2026 TRANSORA. Tüm hakları saklıdır.",
     "privacyPolicy": "Gizlilik Politikası",
     "termsOfService": "Kullanım Koşulları"
+  },
+  "resources": {
+    "hero": {
+      "badge": "Kaynaklar",
+      "title": "Ulaşım Ekipleri için Fikirler,",
+      "titleSecond": "Rehberler ve Oyun Kitapları.",
+      "description": "Sevkiyat ve filo yönetiminden fiyatlandırma ve finansa kadar bağlantılı operasyonları yönetmeye yönelik pratik bilgiler."
+    },
+    "featured": {
+      "badge": "Öne Çıkan · Operasyonlar",
+      "title": "Taşımacılığı Tek Platformda Yönetmek için Operatör Rehberi",
+      "description": "Bağlantılı operasyonların parçalı araçların yerini nasıl aldığı ve her yolculuk tek bir sistemde yönetildiğinde operasyon, filo ve finans süreçlerinin nasıl değiştiği.",
+      "date": "Eyl 2026",
+      "readTime": "8 dk okuma",
+      "readArticle": "Makaleyi oku",
+      "imageAlt": "Bağlantılı taşımacılık operasyonları platformu"
+    },
+    "articles": {
+      "filters": {
+        "all": "Tümü",
+        "operations": "Operasyonlar",
+        "fleet": "Filo",
+        "product": "Ürün",
+        "guides": "Rehberler",
+        "industry": "Sektör"
+      }
+    },
+    "newsletter": {
+      "title": "Ulaşım operasyonlarına dair içgörüleri",
+      "titleSecond": "gelen kutunuzda alın.",
+      "description": "Ayda bir faydalı e-posta. Gereksiz mesaj yok, istediğiniz zaman abonelikten çıkabilirsiniz.",
+      "placeholder": "you@company.com",
+      "button": "Abone Ol"
+    }
   }
 }

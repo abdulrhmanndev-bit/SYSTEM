@@ -36,10 +36,10 @@ export default function MissionSection() {
             <Image
               src="/about/mission.png"
               alt=""
-              width={600}
-              height={500}
-              className="h-auto w-full max-w-md object-contain"
-              loading="eager"
+              width={676}
+              height={422}
+              className="  object-cover"
+              priority
             />
           </div>
         </div>

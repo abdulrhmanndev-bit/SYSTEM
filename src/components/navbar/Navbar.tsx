@@ -15,8 +15,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import LanguageSwitcher from "@/components/toggles/LanguageSwitcher";
-import { ModeToggle } from "@/components/toggles/ModeToggle";
+import { ModeToggle } from "../Toggles/ModeToggle";
+import LanguageSwitcher from "../Toggles/LanguageSwitcher";
 
 const navLinks = [
   ["platform", "/platform"],
@@ -31,7 +31,6 @@ export default function Navbar() {
   const pathname = usePathname();
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border bg-surface">
-      {" "}
       <MainFlex>
         <nav className="flex w-full items-center justify-between gap-6">
           {/* Logo */}

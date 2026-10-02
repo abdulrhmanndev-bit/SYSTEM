@@ -1,3 +1,5 @@
+// components/ui/card.tsx
+
 import type { ComponentProps } from "react";
 import { cn } from "cn";
 
@@ -42,7 +44,8 @@ function CardTitle({ className, ...props }: ComponentProps<"div">) {
     <div
       data-slot="card-title"
       className={cn(
-        "text-base font-medium leading-snug text-foreground group-data-[size=sm]/card:text-sm",
+        "text-base leading-snug font-medium text-foreground",
+        "group-data-[size=sm]/card:text-sm",
         className,
       )}
       {...props}
@@ -88,7 +91,7 @@ function CardFooter({ className, ...props }: ComponentProps<"div">) {
     <div
       data-slot="card-footer"
       className={cn(
-        "flex items-center rounded-b-xl border-t border-border bg-muted/50",
+        "mt-auto flex items-center rounded-b-xl border-t border-border bg-muted/50",
         className,
       )}
       {...props}

@@ -4,13 +4,13 @@ import { useTranslations } from "next-intl";
 
 import MainFlex from "@/components/shared/MainFlex";
 
-export default function HeroSection() {
-  const t = useTranslations("about.hero");
+export default function ResourcesHeroSection() {
+  const t = useTranslations("resources.hero");
 
   return (
-    <section className="bg-background ">
+    <section className="bg-background">
       <MainFlex>
-        <div className="flex   flex-col items-center justify-center py-36 text-center">
+        <div className="flex flex-col items-center justify-center py-36 text-center">
           {/* Badge */}
           <div className="section-badge">
             <span className="section-badge-dot" />
@@ -18,9 +18,9 @@ export default function HeroSection() {
           </div>
 
           {/* Title */}
-          <h1 className="max-w-3xl text-4xl leading-tight font-bold tracking-tight text-text-primary lg:text-[40px]">
+          <h1 className="max-w-4xl text-4xl leading-tight font-bold tracking-tight text-text-primary md:text-5xl">
             {t("title")}
-            <br />
+            <br className="hidden sm:block" />
             {t("titleSecond")}
           </h1>
 
