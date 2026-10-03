@@ -23,7 +23,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <Navbar />
 
         <main className="flex-1">{children}</main>
-        <Footer/>
+        {/* <Footer/> */}
       </div>
       
     </NextIntlClientProvider>
