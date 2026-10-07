@@ -88,7 +88,7 @@ export default function Navbar() {
               {t("login")}
             </Link>
 
-            <Link href="/request-demo" className={cn(buttonVariants())}>
+            <Link href="/register" className={cn(buttonVariants())}>
               {t("requestDemo")}
             </Link>
 

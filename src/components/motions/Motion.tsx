@@ -59,12 +59,10 @@ type PipeMotionProps = {
   path: string;
   delay?: number;
 };
-
 type DotMotionProps = {
-  index: number;
   opacity?: number;
+  active?: boolean;
 };
-
 /* =========================
    Shared
 ========================= */
@@ -262,17 +260,18 @@ export function ContentMotion({ children, className }: MotionProps) {
   );
 }
 
-export function DotMotion({ index, opacity = 1 }: DotMotionProps) {
+export function DotMotion({ opacity = 1, active = false }: DotMotionProps) {
   return (
     <motion.span
-      initial={{ opacity: 0, scale: 0 }}
-      animate={{ opacity, scale: 1 }}
-      transition={{
-        ...spring,
-        damping: 15,
-        delay: 1.35 + index * 0.1,
+      animate={{
+        opacity,
+        scale: active ? 1.15 : 1,
       }}
-      className="size-2.5 rounded-full bg-white"
+      transition={{
+        duration: 0.2,
+        ease,
+      }}
+      className="block size-2.5 rounded-full bg-white"
     />
   );
 }

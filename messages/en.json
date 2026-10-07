@@ -1,54 +1,119 @@
 {
   "auth": {
     "login": {
-      "logoAlt": "Logo",
-      "title": "Log in to your account",
-      "description": "Welcome back! Please enter your details to continue.",
+      "logoAlt": "TRANSORA logo",
+      "title": "Welcome back",
+      "description": "Sign in to continue to your account",
 
       "email": {
-        "label": "Work email",
-        "placeholder": "you@company.com",
-        "required": "Email is required",
-        "invalid": "Please enter a valid email address"
+        "label": "Email address",
+        "placeholder": "Enter your email",
+        "required": "Email address is required",
+        "maxLength": "Email address must not exceed 254 characters",
+        "invalid": "Enter a valid email address"
       },
 
       "password": {
         "label": "Password",
         "placeholder": "Enter your password",
-        "show": "Show password",
-        "hide": "Hide password",
         "required": "Password is required",
-        "minLength": "Password must be at least 6 characters"
+        "show": "Show password",
+        "hide": "Hide password"
       },
 
       "rememberMe": "Remember me",
       "forgotPassword": "Forgot password?",
-      "submit": "Log in",
-
+      "submit": "Sign in",
       "noAccount": "Don't have an account?",
       "requestAccess": "Request access",
+      "invited": "Already have an invitation?",
+      "joinWithCode": "Join with code"
+    },
 
-      "invited": "Invited by a company?",
-      "joinWithCode": "Join with an invite code"
+    "register": {
+      "logoAlt": "TRANSORA logo",
+      "title": "Create your account",
+      "description": "Enter your details to get started",
+
+      "firstName": {
+        "label": "First name",
+        "placeholder": "Enter first name",
+        "required": "First name is required",
+        "maxLength": "First name must not exceed 100 characters"
+      },
+
+      "lastName": {
+        "label": "Last name",
+        "placeholder": "Enter last name",
+        "required": "Last name is required",
+        "maxLength": "Last name must not exceed 100 characters"
+      },
+
+      "email": {
+        "label": "Email address",
+        "placeholder": "Enter your email",
+        "required": "Email address is required",
+        "maxLength": "Email address must not exceed 254 characters",
+        "invalid": "Enter a valid email address"
+      },
+
+      "phone": {
+        "label": "Phone number",
+        "placeholder": "Enter phone number",
+        "invalid": "Enter a valid phone number"
+      },
+
+      "gender": {
+        "label": "Gender",
+        "male": "Male",
+        "female": "Female"
+      },
+
+      "dateOfBirth": {
+        "label": "Date of birth",
+        "placeholder": "Select date of birth",
+        "required": "Date of birth is required",
+        "invalid": "Enter a valid date of birth",
+        "minAge": "You must be at least 18 years old"
+      },
+
+      "password": {
+        "label": "Password",
+        "placeholder": "Create a password",
+        "required": "Password is required",
+        "minLength": "Password must be at least 6 characters",
+        "uppercase": "Password must contain at least 2 uppercase letters",
+        "symbol": "Password must contain at least 1 symbol",
+        "show": "Show password",
+        "hide": "Hide password"
+      },
+
+      "confirmPassword": {
+        "label": "Confirm password",
+        "placeholder": "Confirm your password",
+        "required": "Please confirm your password",
+        "mismatch": "Passwords do not match"
+      },
+
+      "submit": "Create account",
+      "haveAccount": "Already have an account?",
+      "login": "Sign in"
     },
-    "email": {
-      "label": "Work email",
-      "placeholder": "you@company.com",
-      "required": "Email is required",
-      "invalid": "Enter a valid email address"
-    },
-    "password": {
-      "label": "Password",
-      "placeholder": "Enter your password",
-      "show": "Show password",
-      "hide": "Hide password",
-      "required": "Password is required",
-      "minLength": "Password must be at least 6 characters"
+
+    "verify": {
+      "token": {
+        "required": "Verification token is required"
+      }
     }
   },
   "visual": {
-    "imageAlt": "Transportation platform",
-    "title": "One Platform. Every Transportation Operation."
+    "imageAlt": "Connected business operations",
+    "goToSlide": "Go to slide {number}",
+    "slides": {
+      "communication": "Connect every customer conversation in one place",
+      "transportation": "Manage transportation operations from one platform",
+      "booking": "Handle hotel bookings and reservations with ease"
+    }
   },
   "navbar": {
     "platform": "Platform",
@@ -194,6 +259,17 @@
       "description": "One thoughtful email a month. No noise, unsubscribe anytime.",
       "placeholder": "you@company.com",
       "button": "Subscribe"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Transportation Management Platform",
+      "title": "Move Every Operation Forward.",
+      "description": "Manage bookings, vehicles, drivers, suppliers, routes, pricing, and accounting from one powerful transportation platform.",
+      "requestDemo": "Request a Demo",
+      "explorePlatform": "Explore Platform",
+      "note": "Built for transportation companies, travel operators, and mobility businesses.",
+      "imageAlt": "TRANSORA transportation operations dashboard"
     }
   }
 }

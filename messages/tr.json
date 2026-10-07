@@ -1,53 +1,119 @@
 {
   "auth": {
     "login": {
-      "logoAlt": "Logo",
-      "title": "Hesabınıza giriş yapın",
-      "description": "Tekrar hoş geldiniz! Devam etmek için bilgilerinizi girin.",
+      "logoAlt": "TRANSORA logosu",
+      "title": "Tekrar hoş geldiniz",
+      "description": "Hesabınıza devam etmek için giriş yapın",
 
       "email": {
-        "label": "İş e-postası",
-        "placeholder": "you@company.com",
+        "label": "E-posta adresi",
+        "placeholder": "E-posta adresinizi girin",
         "required": "E-posta adresi gereklidir",
-        "invalid": "Lütfen geçerli bir e-posta adresi girin"
+        "maxLength": "E-posta adresi 254 karakteri geçemez",
+        "invalid": "Geçerli bir e-posta adresi girin"
       },
+
       "password": {
         "label": "Şifre",
         "placeholder": "Şifrenizi girin",
-        "show": "Şifreyi göster",
-        "hide": "Şifreyi gizle",
         "required": "Şifre gereklidir",
-        "minLength": "Şifre en az 6 karakter olmalıdır"
+        "show": "Şifreyi göster",
+        "hide": "Şifreyi gizle"
       },
 
       "rememberMe": "Beni hatırla",
       "forgotPassword": "Şifrenizi mi unuttunuz?",
       "submit": "Giriş yap",
-
       "noAccount": "Hesabınız yok mu?",
       "requestAccess": "Erişim talep et",
+      "invited": "Zaten bir davetiniz var mı?",
+      "joinWithCode": "Kod ile katıl"
+    },
 
-      "invited": "Bir şirket tarafından davet edildiniz mi?",
-      "joinWithCode": "Davet koduyla katıl"
+    "register": {
+      "logoAlt": "TRANSORA logosu",
+      "title": "Hesabınızı oluşturun",
+      "description": "Başlamak için bilgilerinizi girin",
+
+      "firstName": {
+        "label": "Ad",
+        "placeholder": "Adınızı girin",
+        "required": "Ad gereklidir",
+        "maxLength": "Ad 100 karakteri geçemez"
+      },
+
+      "lastName": {
+        "label": "Soyad",
+        "placeholder": "Soyadınızı girin",
+        "required": "Soyad gereklidir",
+        "maxLength": "Soyad 100 karakteri geçemez"
+      },
+
+      "email": {
+        "label": "E-posta adresi",
+        "placeholder": "E-posta adresinizi girin",
+        "required": "E-posta adresi gereklidir",
+        "maxLength": "E-posta adresi 254 karakteri geçemez",
+        "invalid": "Geçerli bir e-posta adresi girin"
+      },
+
+      "phone": {
+        "label": "Telefon numarası",
+        "placeholder": "Telefon numaranızı girin",
+        "invalid": "Geçerli bir telefon numarası girin"
+      },
+
+      "gender": {
+        "label": "Cinsiyet",
+        "male": "Erkek",
+        "female": "Kadın"
+      },
+
+      "dateOfBirth": {
+        "label": "Doğum tarihi",
+        "placeholder": "Doğum tarihini seçin",
+        "required": "Doğum tarihi gereklidir",
+        "invalid": "Geçerli bir doğum tarihi girin",
+        "minAge": "En az 18 yaşında olmalısınız"
+      },
+
+      "password": {
+        "label": "Şifre",
+        "placeholder": "Bir şifre oluşturun",
+        "required": "Şifre gereklidir",
+        "minLength": "Şifre en az 6 karakter olmalıdır",
+        "uppercase": "Şifre en az 2 büyük harf içermelidir",
+        "symbol": "Şifre en az 1 özel karakter içermelidir",
+        "show": "Şifreyi göster",
+        "hide": "Şifreyi gizle"
+      },
+
+      "confirmPassword": {
+        "label": "Şifreyi doğrula",
+        "placeholder": "Şifrenizi tekrar girin",
+        "required": "Lütfen şifrenizi doğrulayın",
+        "mismatch": "Şifreler eşleşmiyor"
+      },
+
+      "submit": "Hesap oluştur",
+      "haveAccount": "Zaten bir hesabınız var mı?",
+      "login": "Giriş yap"
     },
-    "email": {
-      "label": "İş e-postası",
-      "placeholder": "you@company.com",
-      "required": "E-posta adresi gereklidir",
-      "invalid": "Geçerli bir e-posta adresi girin"
-    },
-    "password": {
-      "label": "Şifre",
-      "placeholder": "Şifrenizi girin",
-      "show": "Şifreyi göster",
-      "hide": "Şifreyi gizle",
-      "required": "Şifre gereklidir",
-      "minLength": "Şifre en az 6 karakter olmalıdır"
+
+    "verify": {
+      "token": {
+        "required": "Doğrulama anahtarı gereklidir"
+      }
     }
   },
   "visual": {
-    "imageAlt": "Ulaşım platformu",
-    "title": "Tek Platform. Tüm Ulaşım Operasyonları."
+    "imageAlt": "Bağlantılı iş operasyonları",
+    "goToSlide": "{number}. slayta git",
+    "slides": {
+      "communication": "Tüm müşteri iletişim kanallarını tek yerde yönetin",
+      "transportation": "Ulaşım operasyonlarını tek bir platformdan yönetin",
+      "booking": "Otel rezervasyonlarını kolayca yönetin"
+    }
   },
   "navbar": {
     "platform": "Platform",
@@ -193,6 +259,17 @@
       "description": "Ayda bir faydalı e-posta. Gereksiz mesaj yok, istediğiniz zaman abonelikten çıkabilirsiniz.",
       "placeholder": "you@company.com",
       "button": "Abone Ol"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Ulaşım Yönetim Platformu",
+      "title": "Her Operasyonu İleriye Taşıyın.",
+      "description": "Rezervasyonları, araçları, sürücüleri, tedarikçileri, rotaları, fiyatlandırmayı ve muhasebeyi tek bir güçlü ulaşım platformundan yönetin.",
+      "requestDemo": "Demo Talep Et",
+      "explorePlatform": "Platformu Keşfet",
+      "note": "Ulaşım şirketleri, seyahat operatörleri ve mobilite işletmeleri için geliştirildi.",
+      "imageAlt": "TRANSORA ulaşım operasyonları kontrol paneli"
     }
   }
 }

@@ -9,9 +9,11 @@ import { Eye, EyeOff, LockKeyhole, Mail } from "lucide-react";
 import { toast } from "sonner";
 
 import { Link } from "@/i18n/navigation";
-import { LoginSchema, type LoginFormData } from "@/schemas/auth.schema";
+import { LoginSchema } from "@/schemas/auth.schema";
+import { LOGIN_DEFAULT_VALUES, type LoginFormData } from "@/schemas/auth.types";
 
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -20,6 +22,9 @@ const linkClass =
   "font-medium text-text-link underline-offset-4 hover:underline";
 
 const iconClass = "size-4 shrink-0 text-text-disabled";
+
+const passwordClass =
+  "flex h-10 items-center rounded-lg border border-input bg-surface transition-colors hover:border-input-hover focus-within:border-ring focus-within:ring-3 focus-within:ring-ring/20 data-invalid:border-error data-invalid:ring-3 data-invalid:ring-error/20";
 
 export default function LoginForm() {
   const t = useTranslations("auth.login");
@@ -33,51 +38,46 @@ export default function LoginForm() {
     formState: { errors, isSubmitting },
   } = useForm<LoginFormData>({
     resolver: zodResolver(schema),
-    defaultValues: {
-      email: "",
-      password: "",
-      remember: false,
-    },
+    defaultValues: LOGIN_DEFAULT_VALUES,
   });
 
-  const onSubmit = (data: LoginFormData) => {
-    console.log(data);
+  const onSubmit = async ({ remember, ...credentials }: LoginFormData) => {
+    console.log({ credentials, remember });
+    // await login(credentials);
   };
 
   const onInvalid: SubmitErrorHandler<LoginFormData> = (errors) => {
     const message = errors.email?.message ?? errors.password?.message;
-
     if (message) toast.error(message);
   };
 
   return (
     <div className="w-full max-w-91.25">
-      <div className="rounded-2xl border border-border bg-surface px-5 py-7 shadow-sm sm:px-6">
+      <Card className="gap-0 rounded-2xl border-border bg-surface px-5 py-7 shadow-sm sm:px-6">
         <Image
           src="/auth/logo.png"
           alt={t("logoAlt")}
           width={40}
           height={40}
           priority
-          className="mx-auto mb-4 size-10 object-contain"
+          className="mx-auto my-4 size-10 object-contain"
         />
 
-        <header className="mb-7 text-center">
+        <div className="mb-7 text-center">
           <h1 className="text-lg font-semibold text-text-primary">
             {t("title")}
           </h1>
 
           <p className="mt-1 text-xs text-text-secondary">{t("description")}</p>
-        </header>
+        </div>
 
         <form
           noValidate
           onSubmit={handleSubmit(onSubmit, onInvalid)}
           className="space-y-4"
         >
-          {/* Email */}
           <div className="space-y-1.5">
-            <Label htmlFor="email" className="text-xs text-text-primary">
+            <Label htmlFor="email" className="text-xs">
               {t("email.label")}
             </Label>
 
@@ -99,15 +99,14 @@ export default function LoginForm() {
             </div>
           </div>
 
-          {/* Password */}
           <div className="space-y-1.5">
-            <Label htmlFor="password" className="text-xs text-text-primary">
+            <Label htmlFor="password" className="text-xs">
               {t("password.label")}
             </Label>
 
             <div
               data-invalid={!!errors.password || undefined}
-              className="flex h-10 items-center rounded-md border border-input bg-surface transition-colors focus-within:border-ring focus-within:ring-3 focus-within:ring-ring/20 data-invalid:border-error data-invalid:ring-3 data-invalid:ring-error/20"
+              className={passwordClass}
             >
               <LockKeyhole aria-hidden className={`ms-3 ${iconClass}`} />
 
@@ -141,7 +140,6 @@ export default function LoginForm() {
             </div>
           </div>
 
-          {/* Remember / Forgot */}
           <div className="flex items-center justify-between gap-4">
             <Controller
               name="remember"
@@ -151,9 +149,7 @@ export default function LoginForm() {
                   <Checkbox
                     id="remember"
                     checked={field.value}
-                    onCheckedChange={(checked) =>
-                      field.onChange(checked === true)
-                    }
+                    onCheckedChange={(value) => field.onChange(value === true)}
                   />
 
                   <Label
@@ -185,7 +181,7 @@ export default function LoginForm() {
             {t("requestAccess")}
           </Link>
         </p>
-      </div>
+      </Card>
 
       <p className="mt-4 text-center text-xs text-text-secondary">
         {t("invited")}{" "}
