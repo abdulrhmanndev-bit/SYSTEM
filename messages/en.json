@@ -34,6 +34,9 @@
       "logoAlt": "TRANSORA logo",
       "title": "Create your account",
       "description": "Enter your details to get started",
+      "today": "Today",
+      "remove": "Remove",
+      "done": "Done",
 
       "firstName": {
         "label": "First name",

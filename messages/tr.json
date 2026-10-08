@@ -34,6 +34,9 @@
       "logoAlt": "TRANSORA logosu",
       "title": "Hesabınızı oluşturun",
       "description": "Başlamak için bilgilerinizi girin",
+      "today": "Bugün",
+      "remove": "Kaldır",
+      "done": "Tamam",
 
       "firstName": {
         "label": "Ad",

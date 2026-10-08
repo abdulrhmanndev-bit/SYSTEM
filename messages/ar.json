@@ -34,6 +34,9 @@
       "logoAlt": "شعار TRANSORA",
       "title": "إنشاء حسابك",
       "description": "أدخل بياناتك للبدء",
+      "today": "اليوم",
+      "remove": "إزالة",
+      "done": "تم",
 
       "firstName": {
         "label": "الاسم الأول",

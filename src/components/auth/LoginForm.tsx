@@ -1,16 +1,11 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Controller, type SubmitErrorHandler, useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
 import { Eye, EyeOff, LockKeyhole, Mail } from "lucide-react";
-import { toast } from "sonner";
 
 import { Link } from "@/i18n/navigation";
-import { LoginSchema } from "@/schemas/auth.schema";
-import { LOGIN_DEFAULT_VALUES, type LoginFormData } from "@/schemas/auth.types";
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -24,36 +19,17 @@ const linkClass =
 const iconClass = "size-4 shrink-0 text-text-disabled";
 
 const passwordClass =
-  "flex h-10 items-center rounded-lg border border-input bg-surface transition-colors hover:border-input-hover focus-within:border-ring focus-within:ring-3 focus-within:ring-ring/20 data-invalid:border-error data-invalid:ring-3 data-invalid:ring-error/20";
+  "flex h-10 items-center rounded-lg border border-input bg-surface transition-colors hover:border-input-hover focus-within:border-ring focus-within:ring-3 focus-within:ring-ring/20";
 
 export default function LoginForm() {
   const t = useTranslations("auth.login");
-  const schema = useMemo(() => LoginSchema(t), [t]);
+
   const [showPassword, setShowPassword] = useState(false);
-
-  const {
-    register,
-    control,
-    handleSubmit,
-    formState: { errors, isSubmitting },
-  } = useForm<LoginFormData>({
-    resolver: zodResolver(schema),
-    defaultValues: LOGIN_DEFAULT_VALUES,
-  });
-
-  const onSubmit = async ({ remember, ...credentials }: LoginFormData) => {
-    console.log({ credentials, remember });
-    // await login(credentials);
-  };
-
-  const onInvalid: SubmitErrorHandler<LoginFormData> = (errors) => {
-    const message = errors.email?.message ?? errors.password?.message;
-    if (message) toast.error(message);
-  };
+  const [remember, setRemember] = useState(false);
 
   return (
-    <div className="w-full max-w-91.25">
-      <Card className="gap-0 rounded-2xl border-border bg-surface px-5 py-7 shadow-sm sm:px-6">
+    <div className="w-full max-w-md">
+      <Card className="w-full gap-0 rounded-2xl border-border bg-surface px-6 py-8 shadow-sm sm:px-8">
         <Image
           src="/auth/logo.png"
           alt={t("logoAlt")}
@@ -67,15 +43,10 @@ export default function LoginForm() {
           <h1 className="text-lg font-semibold text-text-primary">
             {t("title")}
           </h1>
-
           <p className="mt-1 text-xs text-text-secondary">{t("description")}</p>
         </div>
 
-        <form
-          noValidate
-          onSubmit={handleSubmit(onSubmit, onInvalid)}
-          className="space-y-4"
-        >
+        <div className="space-y-4">
           <div className="space-y-1.5">
             <Label htmlFor="email" className="text-xs">
               {t("email.label")}
@@ -86,15 +57,13 @@ export default function LoginForm() {
                 aria-hidden
                 className="pointer-events-none absolute inset-s-3 top-1/2 size-4 -translate-y-1/2 text-text-disabled"
               />
-
               <Input
-                {...register("email")}
                 id="email"
+                name="email"
                 type="email"
                 autoComplete="email"
                 placeholder={t("email.placeholder")}
-                aria-invalid={!!errors.email}
-                className="h-10 ps-9"
+                className="ps-9"
               />
             </div>
           </div>
@@ -104,20 +73,16 @@ export default function LoginForm() {
               {t("password.label")}
             </Label>
 
-            <div
-              data-invalid={!!errors.password || undefined}
-              className={passwordClass}
-            >
+            <div className={passwordClass}>
               <LockKeyhole aria-hidden className={`ms-3 ${iconClass}`} />
 
               <Input
-                {...register("password")}
                 id="password"
+                name="password"
                 type={showPassword ? "text" : "password"}
                 autoComplete="current-password"
                 placeholder={t("password.placeholder")}
-                aria-invalid={!!errors.password}
-                className="h-full min-w-0 flex-1 border-0 bg-transparent px-3 shadow-none hover:border-0 focus-visible:border-0 focus-visible:ring-0 aria-invalid:border-0 aria-invalid:ring-0"
+                className="h-full min-w-0 flex-1 border-0 bg-transparent px-3 shadow-none hover:border-0 focus-visible:border-0 focus-visible:ring-0"
               />
 
               <Button
@@ -141,26 +106,19 @@ export default function LoginForm() {
           </div>
 
           <div className="flex items-center justify-between gap-4">
-            <Controller
-              name="remember"
-              control={control}
-              render={({ field }) => (
-                <div className="flex items-center gap-2">
-                  <Checkbox
-                    id="remember"
-                    checked={field.value}
-                    onCheckedChange={(value) => field.onChange(value === true)}
-                  />
-
-                  <Label
-                    htmlFor="remember"
-                    className="cursor-pointer text-xs font-normal text-text-secondary"
-                  >
-                    {t("rememberMe")}
-                  </Label>
-                </div>
-              )}
-            />
+            <div className="flex items-center gap-2">
+              <Checkbox
+                id="remember"
+                checked={remember}
+                onCheckedChange={(value) => setRemember(value === true)}
+              />
+              <Label
+                htmlFor="remember"
+                className="cursor-pointer text-xs font-normal text-text-secondary"
+              >
+                {t("rememberMe")}
+              </Label>
+            </div>
 
             <Link
               href="/forgot-password"
@@ -170,10 +128,10 @@ export default function LoginForm() {
             </Link>
           </div>
 
-          <Button type="submit" disabled={isSubmitting} className="h-10 w-full">
+          <Button type="button" className="h-10 w-full">
             {t("submit")}
           </Button>
-        </form>
+        </div>
 
         <p className="mt-5 text-center text-xs text-text-secondary">
           {t("noAccount")}{" "}
