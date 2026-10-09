@@ -101,7 +101,7 @@ export default function NetworkSection() {
           </h2>
         </div>
 
-        <div className="relative mt-12 hidden h-80 overflow-hidden rounded-2xl border border-info-border bg-linear-to-r from-primary/25 to-trip-assigned/25 shadow-sm md:block">
+        <div className="relative mt-12 hidden h-80 overflow-hidden rounded-2xl border border-info-border linear shadow-sm md:block">
           <svg
             viewBox="0 0 1000 320"
             preserveAspectRatio="none"

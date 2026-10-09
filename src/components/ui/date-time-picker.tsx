@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type ComponentProps } from "react";
+import { useState } from "react";
 import { CalendarClock, Clock3 } from "lucide-react";
 import { cn } from "cn";
 
@@ -12,25 +12,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-
-export type DateTimePickerProps = Omit<
-  ComponentProps<typeof Input>,
-  "value" | "defaultValue" | "onChange" | "type" | "min" | "max"
-> & {
-  value?: Date | null;
-  defaultValue?: Date | null;
-  onChange?: (date: Date | undefined) => void;
-  minDate?: Date;
-  maxDate?: Date;
-  minuteStep?: number;
-  labels?: {
-    today?: string;
-    remove?: string;
-    done?: string;
-    time?: string;
-    openCalendar?: string;
-  };
-};
+import { DatePickerProps, parseDate } from "./date-picker";
 
 const pad = (value: number) => String(value).padStart(2, "0");
 
@@ -47,56 +29,6 @@ const normalizeDigits = (value: string) =>
   value
     .replace(/[٠-٩]/g, (digit) => String("٠١٢٣٤٥٦٧٨٩".indexOf(digit)))
     .replace(/[۰-۹]/g, (digit) => String("۰۱۲۳۴۵۶۷۸۹".indexOf(digit)));
-
-function parseDate(value: string): Date | undefined {
-  const input = normalizeDigits(value.trim());
-
-  const createDate = (day: number, month: number, year: number) => {
-    if (year < 1000 || year > 9999) return;
-
-    const date = new Date(year, month - 1, day);
-
-    return date.getFullYear() === year &&
-      date.getMonth() === month - 1 &&
-      date.getDate() === day
-      ? date
-      : undefined;
-  };
-
-  if (/^\d{6,8}$/.test(input)) {
-    const year = Number(input.slice(-4));
-    const datePart = input.slice(0, -4);
-
-    const combinations =
-      datePart.length === 4
-        ? [[datePart.slice(0, 2), datePart.slice(2)]]
-        : datePart.length === 3
-          ? [
-              [datePart.slice(0, 1), datePart.slice(1)],
-              [datePart.slice(0, 2), datePart.slice(2)],
-            ]
-          : [[datePart[0], datePart[1]]];
-
-    for (const [day, month] of combinations) {
-      const date = createDate(Number(day), Number(month), year);
-      if (date) return date;
-    }
-
-    return;
-  }
-
-  const parts = input.split(/[./-]/);
-
-  if (parts.length !== 3 || parts.some((part) => !/^\d+$/.test(part))) {
-    return;
-  }
-
-  const [first, second, third] = parts;
-
-  return first.length === 4
-    ? createDate(Number(third), Number(second), Number(first))
-    : createDate(Number(first), Number(second), Number(third));
-}
 
 function parseDateTime(value: string): Date | undefined {
   const input = normalizeDigits(value.trim());
@@ -133,7 +65,7 @@ export function DateTimePicker({
   onKeyDown,
   dir,
   ...props
-}: DateTimePickerProps) {
+}: DatePickerProps) {
   const controlled = value !== undefined;
 
   const [internalValue, setInternalValue] = useState<Date | null | undefined>(

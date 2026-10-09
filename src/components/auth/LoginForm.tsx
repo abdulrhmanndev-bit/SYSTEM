@@ -29,7 +29,7 @@ export default function LoginForm() {
 
   return (
     <div className="w-full max-w-md">
-      <Card className="w-full gap-0 rounded-2xl border-border bg-surface px-6 py-8 shadow-sm sm:px-8">
+      <Card className="w-full gap-0 rounded-2xl border-border bg-surface px-6 py-6 shadow-sm sm:px-8">
         <Image
           src="/auth/logo.png"
           alt={t("logoAlt")}

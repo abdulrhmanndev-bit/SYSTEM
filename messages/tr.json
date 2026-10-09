@@ -230,7 +230,108 @@
     "privacyPolicy": "Gizlilik Politikası",
     "termsOfService": "Kullanım Koşulları"
   },
-  "resources": {
+  "resources": {"popular": {
+  "badge": "POPÜLER KAYNAKLAR",
+  "title": "Ekiplerin tekrar tekrar başvurduğu pratik rehberler.",
+  "readTime": "{minutes} dk okuma",
+  "types": {
+    "guide": "REHBER",
+    "checklist": "KONTROL LİSTESİ"
+  },
+  "actions": {
+    "view": "Görüntüle",
+    "download": "İndir"
+  },
+  "items": {
+    "operations": {
+      "title": "Taşımacılık Operasyonları Rehberi",
+      "description": "Günlük operasyonları talepten tamamlanan sefere kadar yönetmek için adım adım rehber."
+    },
+    "fleet": {
+      "title": "Filo Yönetimi Kontrol Listesi",
+      "description": "Araçların belgelerini, kullanılabilirliğini ve doğru şekilde atanmasını yönetmek için pratik kontrol listesi."
+    },
+    "routes": {
+      "title": "Rota Planlama Rehberi",
+      "description": "Yoğun dönemlerde etkili rotalar, duraklar ve sefer programları nasıl oluşturulur?"
+    },
+    "kpi": {
+      "title": "Taşımacılık KPI Rehberi",
+      "description": "Yönetimin daha iyi kararlar almasını sağlayan operasyonel performans göstergelerini seçme rehberi."
+    }
+  }
+},
+    "ourteam": {
+      "badge": "EN YENİ",
+      "title": "Ekibimizden en son haberler",
+      "allArticles": "Tüm makaleler",
+      "minRead": "dk okuma",
+      "readArticle": "Makaleyi oku: {title}",
+      "previous": "Önceki sayfa",
+      "next": "Sonraki sayfa",
+      "articles": {
+        "fleetUtilization": {
+          "title": "Filo Kullanımınızın Gelir Kaybettirdiğini Gösteren Beş İşaret",
+          "description": "Kâr marjını sessizce azaltan eğilimler ve bunları erkenden tespit etmenin yolları."
+        },
+        "fleetEfficiency": {
+          "title": "Filo Verimliliğini Artırmak İçin Temel Stratejiler",
+          "description": "Filo performansını geliştirmek ve kârlılığı artırmak için kanıtlanmış teknikler."
+        },
+        "fleetCosts": {
+          "title": "Kötü Filo Yönetiminin Gizli Maliyetleri",
+          "description": "Etkisiz filo denetiminin finansal etkileri ve bunları azaltmanın yolları."
+        },
+        "fleetTechnology": {
+          "title": "Filo Yönetimini Dönüştüren Yenilikçi Teknolojiler",
+          "description": "Operasyonel etkinliği artıran modern teknolojik çözümler."
+        },
+        "fuelCosts": {
+          "title": "Yakıt Maliyetlerini Azaltmak İçin Etkili Yöntemler",
+          "description": "Verimliliği korurken yakıt tüketimini azaltmaya yönelik stratejiler."
+        },
+        "fleetManagement": {
+          "title": "Filo Yönetimi Performansını İyileştirme",
+          "description": "Operasyonel görünürlüğü artırmak, maliyetleri azaltmak ve günlük işleri yönetmek için pratik yöntemler."
+        },
+        "fleetAnalytics": {
+          "title": "Filo Optimizasyonunda Veri Analitiğinin Rolü",
+          "description": "Veriye dayalı kararlarla verimliliği artırmak ve tasarruf sağlamak."
+        },
+        "fleetMaintenance": {
+          "title": "Filo Bakımı İçin En İyi Uygulamalar",
+          "description": "Araç ömrünü ve güvenilirliğini artıran temel bakım stratejileri."
+        },
+        "fleetSustainability": {
+          "title": "Filo Sürdürülebilirliğinde Yeni Trendler",
+          "description": "Çevresel etkiyi azaltan ve kurumsal sorumluluğu güçlendiren sürdürülebilir uygulamalar."
+        }
+      }
+    },
+    "explore": {
+      "badge": "Türe göre keşfedin",
+      "title": "Ekibinizin ihtiyaç duyduğu her şey tek bir yerde",
+      "articles": {
+        "title": "İçgörüler ve Makaleler",
+        "description": "Taşımacılık operasyonları, filo yönetimi ve dijital dönüşüm için pratik fikirler.",
+        "action": "Makaleleri Keşfet"
+      },
+      "guides": {
+        "title": "Rehberler",
+        "description": "Taşımacılık iş akışlarını ve operasyonel verimliliği geliştirmek için adım adım kaynaklar.",
+        "action": "Rehberleri Keşfet"
+      },
+      "updates": {
+        "title": "Ürün Güncellemeleri",
+        "description": "Platformdaki yeni özellikleri, iyileştirmeleri ve güncellemeleri keşfedin.",
+        "action": "Güncellemeleri Gör"
+      },
+      "help": {
+        "title": "Yardım Merkezi",
+        "description": "Platformu kullanmak için yanıtları, kurulum talimatlarını ve pratik rehberliği bulun.",
+        "action": "Yardım Merkezine Git"
+      }
+    },
     "hero": {
       "badge": "Kaynaklar",
       "title": "Ulaşım Ekipleri için Fikirler,",

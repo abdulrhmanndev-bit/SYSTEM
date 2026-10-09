@@ -231,6 +231,108 @@
     "termsOfService": "Terms of Service"
   },
   "resources": {
+    "popular": {
+      "badge": "POPULAR RESOURCES",
+      "title": "Practical guides teams return to.",
+      "readTime": "{minutes} min read",
+      "types": {
+        "guide": "GUIDE",
+        "checklist": "CHECKLIST"
+      },
+      "actions": {
+        "view": "View",
+        "download": "Download"
+      },
+      "items": {
+        "operations": {
+          "title": "Transportation Operations Guide",
+          "description": "A structured walkthrough of running daily operations from request to completed trip."
+        },
+        "fleet": {
+          "title": "Fleet Management Checklist",
+          "description": "A practical checklist for keeping vehicles documented, available, and assigned well."
+        },
+        "routes": {
+          "title": "Route Planning Guide",
+          "description": "How to define routes, stops, and schedules that hold up during busy periods."
+        },
+        "kpi": {
+          "title": "Transportation KPI Guide",
+          "description": "Choosing the operational measures that actually help management decide."
+        }
+      }
+    },
+    "ourteam": {
+      "badge": "LATEST",
+      "title": "Latest from our team",
+      "allArticles": "All articles",
+      "minRead": "min read",
+      "readArticle": "Read article: {title}",
+      "previous": "Previous page",
+      "next": "Next page",
+      "articles": {
+        "fleetUtilization": {
+          "title": "Five Signals Your Fleet Utilization Is Leaking RevenueIs Leaking Revenue",
+          "description": "The patterns that quietly erode margin — and how to spot them before they compound and how to spot them before they compound."
+        },
+        "fleetEfficiency": {
+          "title": "Maximizing Fleet Efficiency: Key Strategies to Implement",
+          "description": "Proven techniques to enhance your fleet performance and increase profitability."
+        },
+        "fleetCosts": {
+          "title": "The Hidden Costs of Poor Fleet Management",
+          "description": "Identifying the financial impacts of ineffective fleet oversight and how to mitigate them."
+        },
+        "fleetTechnology": {
+          "title": "Innovative Technologies Transforming Fleet Management",
+          "description": "Exploring cutting-edge solutions that boost operational effectiveness."
+        },
+        "fuelCosts": {
+          "title": "Reducing Fuel Costs: Effective Tactics for Fleet Operators",
+          "description": "Strategies to minimize fuel consumption while maintaining productivity."
+        },
+        "fleetManagement": {
+          "title": "Improving Fleet Management Performance",
+          "description": "Practical methods for improving visibility, reducing costs, and managing daily operations."
+        },
+        "fleetAnalytics": {
+          "title": "The Role of Data Analytics in Fleet Optimization",
+          "description": "Leveraging data to make informed decisions that drive efficiency and savings."
+        },
+        "fleetMaintenance": {
+          "title": "Best Practices for Fleet Maintenance",
+          "description": "Essential maintenance strategies to ensure vehicle longevity and reliability."
+        },
+        "fleetSustainability": {
+          "title": "Emerging Trends in Fleet Sustainability",
+          "description": "Sustainable practices that reduce environmental impact and enhance corporate responsibility."
+        }
+      }
+    },
+    "explore": {
+      "badge": "Explore by type",
+      "title": "Everything your team needs, in one place",
+      "articles": {
+        "title": "Insights & Articles",
+        "description": "Practical ideas for transportation operations, fleet management, and digital transformation.",
+        "action": "Explore Articles"
+      },
+      "guides": {
+        "title": "Guides",
+        "description": "Step-by-step resources for improving transportation workflows and operational efficiency.",
+        "action": "Explore Guides"
+      },
+      "updates": {
+        "title": "Product Updates",
+        "description": "Discover new features, improvements, and updates across the platform.",
+        "action": "View Updates"
+      },
+      "help": {
+        "title": "Help Center",
+        "description": "Find answers, setup instructions, and practical guidance for using the platform.",
+        "action": "Visit Help Center"
+      }
+    },
     "hero": {
       "badge": "Resources",
       "title": "Ideas, Guides, and Playbooks for",

@@ -1,15 +1,19 @@
-import FeaturedArticleSection from '@/components/landing/resources/FeaturedArticleSection'
+import ResroucesFeatured from '@/components/landing/resources/ResroucesFeatured'
 import NewsletterSection from '@/components/landing/resources/NewsletterSection'
-import ResourcesArticlesSection from '@/components/landing/resources/ResourcesArticlesSection'
+import ResourcesOurTeam from '@/components/landing/resources/ResourcesOurTeam'
+import ResourcesExplore from '@/components/landing/resources/ResourcesExplore'
 import ResourcesHeroSection from '@/components/landing/resources/ResourcesHeroSection'
 import React from 'react'
+import ResourcesPopular from '@/components/landing/resources/ResourcesPopular'
 
 export default function page() {
   return (
     <div>
       <ResourcesHeroSection/>
-      <FeaturedArticleSection/>
-      <ResourcesArticlesSection/>
+      <ResroucesFeatured/>
+      <ResourcesExplore/>
+      <ResourcesOurTeam/>
+      <ResourcesPopular/>
       <NewsletterSection/>
     </div>
   )

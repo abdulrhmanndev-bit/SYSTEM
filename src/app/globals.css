@@ -298,4 +298,7 @@ body {
   .section-badge-text {
     @apply text-xs font-medium text-info-text;
   }
+  .linear {
+    @apply bg-linear-to-r from-primary/25 to-trip-assigned/25;
+  }
 }

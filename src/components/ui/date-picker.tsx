@@ -22,10 +22,12 @@ export type DatePickerProps = Omit<
   onChange?: (date: Date | undefined) => void;
   minDate?: Date;
   maxDate?: Date;
+  minuteStep?: number;
   labels?: {
     today?: string;
     remove?: string;
     done?: string;
+    time?: string;
     openCalendar?: string;
   };
 };
@@ -40,7 +42,7 @@ const normalizeDigits = (value: string) =>
     .replace(/[٠-٩]/g, (digit) => String("٠١٢٣٤٥٦٧٨٩".indexOf(digit)))
     .replace(/[۰-۹]/g, (digit) => String("۰۱۲۳۴۵۶۷۸۹".indexOf(digit)));
 
-function parseDate(value: string): Date | undefined {
+export function parseDate(value: string): Date | undefined {
   const input = normalizeDigits(value.trim());
 
   const createDate = (day: number, month: number, year: number) => {
@@ -64,8 +66,8 @@ function parseDate(value: string): Date | undefined {
         ? [[datePart.slice(0, 2), datePart.slice(2)]]
         : datePart.length === 3
           ? [
-              [datePart.slice(0, 1), datePart.slice(1)],
               [datePart.slice(0, 2), datePart.slice(2)],
+              [datePart.slice(0, 1), datePart.slice(1)],
             ]
           : [[datePart[0], datePart[1]]];
 
