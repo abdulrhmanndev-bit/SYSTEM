@@ -230,37 +230,177 @@
     "privacyPolicy": "Gizlilik Politikası",
     "termsOfService": "Kullanım Koşulları"
   },
-  "resources": {"popular": {
-  "badge": "POPÜLER KAYNAKLAR",
-  "title": "Ekiplerin tekrar tekrar başvurduğu pratik rehberler.",
-  "readTime": "{minutes} dk okuma",
-  "types": {
-    "guide": "REHBER",
-    "checklist": "KONTROL LİSTESİ"
-  },
-  "actions": {
-    "view": "Görüntüle",
-    "download": "İndir"
-  },
-  "items": {
-    "operations": {
-      "title": "Taşımacılık Operasyonları Rehberi",
-      "description": "Günlük operasyonları talepten tamamlanan sefere kadar yönetmek için adım adım rehber."
-    },
-    "fleet": {
-      "title": "Filo Yönetimi Kontrol Listesi",
-      "description": "Araçların belgelerini, kullanılabilirliğini ve doğru şekilde atanmasını yönetmek için pratik kontrol listesi."
-    },
-    "routes": {
-      "title": "Rota Planlama Rehberi",
-      "description": "Yoğun dönemlerde etkili rotalar, duraklar ve sefer programları nasıl oluşturulur?"
-    },
-    "kpi": {
-      "title": "Taşımacılık KPI Rehberi",
-      "description": "Yönetimin daha iyi kararlar almasını sağlayan operasyonel performans göstergelerini seçme rehberi."
-    }
+  "resources": {
+    "article": {
+      "categories": {
+        "operations": "Operasyonlar"
+      },
+      "by": "Yazar",
+      "author": "Taşımacılık Operasyonları Ekibi",
+      "readTime": "{minutes} dk okuma",
+      "contents": "İçindekiler",
+      "keyIdea": "Temel Fikir",
+      "continueReading": "Okumaya Devam Et",
+      "allArticles": "Tüm makaleler",
+      "sections": {
+        "challenge": "Operasyonel zorluklar",
+        "spreadsheets": "Elektronik tabloların sınırları",
+        "workflow": "İş akışını birleştirmek",
+        "visibility": "Operasyonel görünürlüğü artırmak",
+        "scaling": "Ölçeklenebilir operasyonlar oluşturmak",
+        "conclusion": "Son düşünceler"
+      },
+      "table": {
+        "title": "Bugünün Seferleri",
+        "route": "Rota",
+        "vehicle": "Araç",
+        "driver": "Sürücü",
+        "status": "Durum",
+        "statuses": {
+          "scheduled": "Planlandı",
+          "progress": "Devam ediyor",
+          "completed": "Tamamlandı"
+        }
+      },
+      "workflow": {
+        "request": "Talep",
+        "route": "Rota planı",
+        "assignment": "Kaynak atama",
+        "trip": "Seferi tamamlama",
+        "invoice": "Fatura"
+      },
+      "chart": {
+        "title": "Manuel koordinasyon çabası ve entegrasyon düzeyi",
+        "before": "Bağımsız araçlar",
+        "after": "Entegre platform"
+      },
+      "items": {
+        "operators": {
+          "title": "Taşımacılık Ekipleri Neden Elektronik Tabloların Ötesine Geçiyor?",
+          "description": "Elektronik tablolar birçok operasyonun başlangıcını kolaylaştırdı. Ancak büyüme sürecinde sınırları ortaya çıkıyor.",
+          "content": {
+            "challenge": "Taşımacılık ekipleri her gün müşterileri, rotaları, araçları, sürücüleri ve tedarikçileri koordine eder. Bilgiler farklı sistemlerde tutulduğunda iletişim ve manuel kontroller artar.",
+            "keyIdea": "Görünürlük, daha fazla veri değil, doğru verinin ihtiyaç duyan herkes tarafından erişilebilir olmasıdır.",
+            "spreadsheets": "Elektronik tablolar kullanışlıdır ancak operasyon hacmi arttıkça bazı sınırlamalar ortaya çıkar.",
+            "problem1": "Aynı programın birden fazla sürümü dolaşır.",
+            "problem2": "Değişiklikler sürücülere ve müşterilere anında ulaşmaz.",
+            "problem3": "Seferler, araçlar, maliyetler ve faturalar manuel olarak eşleştirilir.",
+            "problem4": "Raporlar farklı dosyalardan yeniden hazırlanır.",
+            "workflow": "Entegre iş akışı, ilk talepten son faturaya kadar tüm aşamaları birbirine bağlar.",
+            "visibility": "Kayıtlar bağlantılı olduğunda operasyon, yönetim ve finans ekipleri aynı seferi farklı açılardan takip edebilir.",
+            "quote": "Amaç yeni bir gösterge paneli değil, herkesin güvendiği ortak bir operasyon görünümüdür.",
+            "scaling": "Ölçeklenme yalnızca daha fazla sefer yapmak değil, büyürken süreçlerin tutarlılığını korumaktır.",
+            "benefit1": "Talep, rota ve atama süreçlerini standartlaştırın.",
+            "benefit2": "Araç ve sürücü belgelerini tek yerde tutun.",
+            "benefit3": "Her role uygun operasyonel görünüm sağlayın.",
+            "conclusion": "Elektronik tablolardan entegre sistemlere geçiş kademeli bir süreçtir. Tek bir iş akışıyla başlayıp zamanla genişlemek sürdürülebilir bir yaklaşımdır."
+          }
+        },
+        "utilization": {
+          "title": "Filo Kullanımınızın Gelir Kaybettirdiğini Gösteren Beş İşaret",
+          "description": "Kâr marjını azaltan gizli operasyonel kalıplar ve bunları erken tespit etme yöntemleri.",
+          "content": {
+            "challenge": "Filo geliri yalnızca araç sayısına bağlı değildir. Boş bekleme, yüksüz seferler ve düzensiz planlama günlük getiriyi azaltabilir.",
+            "keyIdea": "Araçların yalnızca mevcut olup olmadığını değil, gerçekte nasıl kullanıldığını ölçün.",
+            "spreadsheets": "Manuel filo takibi gelir kaybına yol açan kalıpları gizleyebilir.",
+            "problem1": "Araçlar görevler arasında boşta kalır.",
+            "problem2": "Boş dönüş seferleri maliyetleri artırır.",
+            "problem3": "Bakım ve sefer programları çakışır.",
+            "problem4": "Araç performanslarını karşılaştırmak zorlaşır.",
+            "workflow": "Rezervasyonları, sevkiyatı, araç atamalarını ve sefer tamamlamayı ortak bir kayıt sisteminde birleştirin.",
+            "visibility": "Ortak operasyon görünümü kullanılmayan kapasitenin erken tespitini sağlar.",
+            "quote": "Bir aracın meşgul olması kârlı olduğu anlamına gelmez.",
+            "scaling": "Kullanımı artırmak için tutarlı planlama ve net performans göstergeleri gerekir.",
+            "benefit1": "Aktif çalışma ve bekleme sürelerini izleyin.",
+            "benefit2": "Boş seferleri ve atama boşluklarını inceleyin.",
+            "benefit3": "Araç türlerine göre kullanım oranlarını karşılaştırın.",
+            "conclusion": "Planlama ve araç dağılımındaki küçük iyileştirmeler zamanla önemli kazanımlar sağlayabilir."
+          }
+        },
+        "efficiency": {
+          "title": "Filo Verimliliğini Artırmak İçin Temel Stratejiler",
+          "description": "Filo performansını geliştirmek ve kârlılığı artırmak için uygulanabilir yöntemler.",
+          "content": {
+            "challenge": "Verimli filo yönetimi, araçları, sürücüleri, bakımı ve müşteri taleplerini gereksiz gecikmeler olmadan koordine etmektir.",
+            "keyIdea": "Ekipler güvenilir ve ortak bir operasyon kaydıyla çalıştığında verimlilik artar.",
+            "spreadsheets": "Bağımsız kayıtlar verimsizlikleri tespit etmeyi zorlaştırır.",
+            "problem1": "Atamalar farklı yerlerde güncellenir.",
+            "problem2": "Sürücü uygunluğu kolayca doğrulanamaz.",
+            "problem3": "Bakım programları sevkiyatla bağlantılı değildir.",
+            "problem4": "Performans raporları gecikir.",
+            "workflow": "Planlama, atama, sefer yürütme ve raporlamayı tek bir süreçte birleştirin.",
+            "visibility": "Anlık görünürlük aksaklıklara hızlı yanıt verilmesini sağlar.",
+            "quote": "Daha iyi koordinasyon, yeni bir araç eklemekten daha fazla kapasite yaratabilir.",
+            "scaling": "Talep artarken tutarlı performansı koruyacak süreçler oluşturun.",
+            "benefit1": "Atamaları araç uygunluğuna göre planlayın.",
+            "benefit2": "Bakımı operasyonel ihtiyaçlarla koordine edin.",
+            "benefit3": "Verimlilik göstergelerini düzenli inceleyin.",
+            "conclusion": "Filo verimliliği ölçüm, iyileştirme ve standartlaştırmaya dayalı sürekli bir süreçtir."
+          }
+        },
+        "costs": {
+          "title": "Zayıf Filo Yönetiminin Gizli Maliyetleri",
+          "description": "Yetersiz filo denetiminin finansal etkileri ve bunları azaltma yolları.",
+          "content": {
+            "challenge": "Filo maliyetleri yakıt ve bakımla sınırlı değildir. Gecikmeler, kullanılmayan kapasite ve idari işler kârlılığı azaltabilir.",
+            "keyIdea": "Operasyonel ve finansal kayıtlar aynı seferi tutarlı şekilde açıklamalıdır.",
+            "spreadsheets": "Dağınık kayıtlar maliyetleri belirlemeyi ve kontrol etmeyi zorlaştırır.",
+            "problem1": "Tedarikçi ücretlerini mutabık hale getirmek zordur.",
+            "problem2": "Sefer giderleri gecikmeli kaydedilir.",
+            "problem3": "Boş seferler düzenli ölçülmez.",
+            "problem4": "Dolaylı maliyetler raporlarda eksik kalır.",
+            "workflow": "Sefer planlamasını tedarikçi giderleri, müşteri faturaları ve finansal raporlarla bağlayın.",
+            "visibility": "Birleşik görünüm sefer, rota, müşteri ve araç bazında maliyet analizini kolaylaştırır.",
+            "quote": "Kaynağına güvenilir biçimde bağlayamadığınız bir maliyeti iyileştiremezsiniz.",
+            "scaling": "Standart finansal süreçler büyüme sırasında maliyet kontrolünü kolaylaştırır.",
+            "benefit1": "Maliyetleri ilgili seferlere kaydedin.",
+            "benefit2": "Planlanan ve gerçekleşen giderleri karşılaştırın.",
+            "benefit3": "Rota ve müşteri bazında kâr marjlarını inceleyin.",
+            "conclusion": "Daha iyi maliyet kontrolü bağlantılı kayıtlar ve net veri sorumluluklarıyla başlar."
+          }
+        }
+      }
+    },"cover": {
+  "imageAlt": "Sevkiyat, filo ve finans süreçlerini birleştiren taşımacılık yönetim platformu",
+  "workflow": "Müşteri → Rota → Araç → Sürücü → Fatura",
+  "tripStatus": "SEFER DURUMU",
+  "statuses": {
+    "scheduled": "Planlandı",
+    "progress": "Devam ediyor",
+    "completed": "Tamamlandı"
   }
 },
+    "popular": {
+      "badge": "POPÜLER KAYNAKLAR",
+      "title": "Ekiplerin tekrar tekrar başvurduğu pratik rehberler.",
+      "readTime": "{minutes} dk okuma",
+      "types": {
+        "guide": "REHBER",
+        "checklist": "KONTROL LİSTESİ"
+      },
+      "actions": {
+        "view": "Görüntüle",
+        "download": "İndir"
+      },
+      "items": {
+        "operations": {
+          "title": "Taşımacılık Operasyonları Rehberi",
+          "description": "Günlük operasyonları talepten tamamlanan sefere kadar yönetmek için adım adım rehber."
+        },
+        "fleet": {
+          "title": "Filo Yönetimi Kontrol Listesi",
+          "description": "Araçların belgelerini, kullanılabilirliğini ve doğru şekilde atanmasını yönetmek için pratik kontrol listesi."
+        },
+        "routes": {
+          "title": "Rota Planlama Rehberi",
+          "description": "Yoğun dönemlerde etkili rotalar, duraklar ve sefer programları nasıl oluşturulur?"
+        },
+        "kpi": {
+          "title": "Taşımacılık KPI Rehberi",
+          "description": "Yönetimin daha iyi kararlar almasını sağlayan operasyonel performans göstergelerini seçme rehberi."
+        }
+      }
+    },
     "ourteam": {
       "badge": "EN YENİ",
       "title": "Ekibimizden en son haberler",

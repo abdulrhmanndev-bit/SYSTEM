@@ -1,8 +1,9 @@
-type article = {
+export type article = {
   id: number;
   key: string;
   date: string;
   minutes: number;
+  category?: string;
 };
 
 export const articles = [

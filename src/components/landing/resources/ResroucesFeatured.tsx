@@ -1,15 +1,17 @@
-"use client";
-
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 import MainFlex from "@/components/shared/MainFlex";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
+import { articles } from "./ArticleData";
 
-export default function FeaturedArticleSection() {
-  const t = useTranslations("resources.featured");
+export default async function FeaturedArticleSection() {
+  const t = await getTranslations("resources.featured");
+  const article = articles[0];
+
+  if (!article) return null;
 
   return (
     <section className="bg-info-bg">
@@ -59,15 +61,12 @@ export default function FeaturedArticleSection() {
             {/* Read Article Button */}
             <Button
               nativeButton={false}
-              render={<Link href="/resources/operators-guide" />}
+              render={<Link href={`/resources/${article.id}`} />}
               className="mt-5 w-fit gap-2"
             >
               {t("readArticle")}
 
-              <ArrowRight
-                aria-hidden="true"
-                className="size-4 rtl:rotate-180"
-              />
+              <ArrowRight aria-hidden className="size-4 rtl:rotate-180" />
             </Button>
           </div>
         </div>

@@ -75,13 +75,15 @@
   --table-header: #f8fafc;
 
   /* Trip Status */
-  --trip-scheduled: #1769aa;
+  --trip-scheduled: #1769AA;
   --trip-assigned: #20b8c5;
-  --trip-in-progress: #20a878;
-  --trip-completed: #16a34a;
+  --trip-in-progress: #A77310;
+  --trip-completed: #20A878;
   --trip-delayed: #f4b740;
   --trip-cancelled: #d64545;
   --trip-pending: #64748b;
+
+
 }
 
 /* ========================================
@@ -157,13 +159,7 @@
   --table-header: #172131;
 
   /* Trip Status */
-  --trip-scheduled: #4fa9df;
-  --trip-assigned: #22d3ee;
-  --trip-in-progress: #34d399;
-  --trip-completed: #4ade80;
-  --trip-delayed: #fbbf24;
-  --trip-cancelled: #f87171;
-  --trip-pending: #94a3b8;
+
 }
 
 /* ========================================

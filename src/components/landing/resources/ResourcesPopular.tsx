@@ -58,7 +58,7 @@ export default function ResourcesPopular() {
             <Link
               key={key}
               href={href}
-              className="group flex min-h-90 flex-col rounded-2xl border border-border bg-surface-subtle p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:min-h-[390px]"
+              className="group flex min-h-90 flex-col rounded-2xl border border-border bg-surface-subtle p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:min-h-97.5"
             >
               <div className="relative mb-5 flex h-32 items-start justify-start">
                 <Image
