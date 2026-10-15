@@ -8,23 +8,20 @@ export default function HeroSection() {
   const t = useTranslations("about.hero");
 
   return (
-    <section className="bg-background ">
-      <MainFlex className="flex   flex-col items-center  py-36 text-center">
-        {/* Badge */}
+    <section className="bg-background">
+      <MainFlex className="flex flex-col items-center py-36 text-center">
         <div className="section-badge">
           <span className="section-badge-dot" />
           <span className="section-badge-text">{t("badge")}</span>
         </div>
 
-        {/* Title */}
-        <h1 className="max-w-3xl text-4xl leading-tight font-bold tracking-tight text-text-primary lg:text-[40px]">
+        <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-text-primary lg:text-[40px]">
           {t("title")}
           <br />
           {t("titleSecond")}
         </h1>
 
-        {/* Description */}
-        <p className="mt-6 max-w-2xl text-sm leading-relaxed font-medium text-text-tertiary">
+        <p className="mt-6 max-w-2xl text-sm font-medium leading-relaxed text-text-tertiary">
           {t("description")}
         </p>
       </MainFlex>
