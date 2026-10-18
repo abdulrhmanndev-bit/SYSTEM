@@ -1,3 +1,4 @@
+//src/app/[locale]/(landing)/resources/page.tsx
 import ResroucesFeatured from "@/components/landing/resources/ResroucesFeatured";
 import NewsletterSection from "@/components/landing/resources/NewsletterSection";
 import ResourcesOurTeam from "@/components/landing/resources/ResourcesOurTeam";

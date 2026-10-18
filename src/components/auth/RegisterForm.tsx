@@ -28,6 +28,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { DateTimePicker } from "../ui/date-time-picker";
 
 const linkClass =
   "font-medium text-text-link underline-offset-4 hover:underline";
@@ -212,7 +213,7 @@ export default function RegisterForm() {
                   openCalendar: t("dateOfBirth.label"),
                 }}
               />
-              {/* <DateTimePicker
+              <DateTimePicker
                 id="departureDateTime"
                 // minDate={new Date()}
                 minuteStep={5}
@@ -223,7 +224,7 @@ export default function RegisterForm() {
                   time: "Time",
                   openCalendar: "Choose date and time",
                 }}
-              /> */}
+              />
             </div>
 
             <div className="space-y-1.5">

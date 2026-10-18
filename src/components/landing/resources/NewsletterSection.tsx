@@ -18,8 +18,6 @@ export default function NewsletterSection() {
           {/* Heading */}
           <h2 className="max-w-2xl text-3xl leading-tight font-bold tracking-tight text-sidebar-active-foreground">
             {t("title")}
-            <br />
-            {t("titleSecond")}
           </h2>
 
           {/* Description */}
@@ -47,7 +45,7 @@ export default function NewsletterSection() {
           </form>
         </div>
       </MainFlex>
-        <Path />
+      <Path />
     </section>
   );
 }

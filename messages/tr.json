@@ -130,8 +130,7 @@
   "about": {
     "hero": {
       "badge": "TRANSORA Hakkında",
-      "title": "Ulaşım İçin İşletim",
-      "titleSecond": "Sistemini İnşa Ediyoruz.",
+      "title": "Ulaşım İçin İşletim Sistemini İnşa Ediyoruz.",
       "description": "TRANSORA, dağınık araçların yerini tek bir bağlantılı platformla almak için var; böylece insan taşımacılığı yapan her ekip netlik ve kontrolle çalışabilir."
     },
     "mission": {
@@ -170,8 +169,7 @@
     },
     "network": {
       "badge": "Tek Bağlantılı Ağ",
-      "title": "Ulaşımdaki Her Şey,",
-      "titleSecond": "Birbirine Bağlı.",
+      "title": "Ulaşımdaki Her Şey, Birbirine Bağlı.",
       "customers": "Müşteriler",
       "drivers": "Sürücüler",
       "vehicles": "Araçlar",
@@ -360,16 +358,17 @@
           }
         }
       }
-    },"cover": {
-  "imageAlt": "Sevkiyat, filo ve finans süreçlerini birleştiren taşımacılık yönetim platformu",
-  "workflow": "Müşteri → Rota → Araç → Sürücü → Fatura",
-  "tripStatus": "SEFER DURUMU",
-  "statuses": {
-    "scheduled": "Planlandı",
-    "progress": "Devam ediyor",
-    "completed": "Tamamlandı"
-  }
-},
+    },
+    "cover": {
+      "imageAlt": "Sevkiyat, filo ve finans süreçlerini birleştiren taşımacılık yönetim platformu",
+      "workflow": "Müşteri → Rota → Araç → Sürücü → Fatura",
+      "tripStatus": "SEFER DURUMU",
+      "statuses": {
+        "scheduled": "Planlandı",
+        "progress": "Devam ediyor",
+        "completed": "Tamamlandı"
+      }
+    },
     "popular": {
       "badge": "POPÜLER KAYNAKLAR",
       "title": "Ekiplerin tekrar tekrar başvurduğu pratik rehberler.",
@@ -474,8 +473,7 @@
     },
     "hero": {
       "badge": "Kaynaklar",
-      "title": "Ulaşım Ekipleri için Fikirler,",
-      "titleSecond": "Rehberler ve Oyun Kitapları.",
+      "title": "Ulaşım Ekipleri için Fikirler, Rehberler ve Oyun Kitapları.",
       "description": "Sevkiyat ve filo yönetiminden fiyatlandırma ve finansa kadar bağlantılı operasyonları yönetmeye yönelik pratik bilgiler."
     },
     "featured": {
@@ -498,8 +496,7 @@
       }
     },
     "newsletter": {
-      "title": "Ulaşım operasyonlarına dair içgörüleri",
-      "titleSecond": "gelen kutunuzda alın.",
+      "title": "Ulaşım operasyonlarına dair içgörüleri gelen kutunuzda alın.",
       "description": "Ayda bir faydalı e-posta. Gereksiz mesaj yok, istediğiniz zaman abonelikten çıkabilirsiniz.",
       "placeholder": "you@company.com",
       "button": "Abone Ol"
@@ -514,6 +511,119 @@
       "explorePlatform": "Platformu Keşfet",
       "note": "Ulaşım şirketleri, seyahat operatörleri ve mobilite işletmeleri için geliştirildi.",
       "imageAlt": "TRANSORA ulaşım operasyonları kontrol paneli"
+    }
+  },
+  "solutions": {
+    "hero": {
+      "badge": "Çözümler",
+      "title": "Yolcu Taşıma Şeklinize Göre Tasarlandı.",
+      "description": "Hangi tür taşımacılık işletmesini yönetirseniz yönetin, TRANSORA operasyonlarınıza uyum sağlar; tam tersi değil."
+    }
+  },
+  "features": {
+    "hero": {
+      "badge": "Özellikler",
+      "title": "Taşımacılık Operasyonlarınızın İhtiyaç Duyduğu Tüm Özellikler.",
+      "description": "Rezervasyonlardan muhasebeye kadar birbiriyle entegre on özellik, taşımacılık işletmelerinin gerçek çalışma biçimine göre tasarlandı."
+    },
+    "grid": {
+      "items": [
+        {
+          "title": "Günlük operasyonlarınızı tek merkezden yönetin.",
+          "description": "Rezervasyonlar, görevlendirmeler, sevkiyat ve canlı sefer durumları tek bir bağlantılı panelde. Artık farklı tablolar ve mesajlar arasında bilgi aramanıza gerek yok.",
+          "points": [
+            "Birleşik operasyon paneli",
+            "Gerçek zamanlı sefer durumu",
+            "Rezervasyondan varışa takip"
+          ]
+        },
+        {
+          "title": "Rotaları planlayın ve her hareketi takip edin.",
+          "description": "Rotalar ve varış noktaları oluşturun, araçların başlangıçtan varışa kadar tüm hareketlerini bağlantılı verilerle izleyin.",
+          "points": [
+            "Rota ve varış noktası oluşturma",
+            "Canlı hareket takibi",
+            "Başlangıçtan varışa kayıt"
+          ]
+        },
+        {
+          "title": "Filonuzu her zaman hazır tutun.",
+          "description": "Araçların uygunluğunu, görevlendirmelerini, kullanım oranlarını ve bakım süreçlerini takip ederek her sefere doğru aracı hazırlayın.",
+          "points": [
+            "Araç uygunluğu ve görevlendirme",
+            "Kullanım analizleri",
+            "Bakım planlaması"
+          ]
+        },
+        {
+          "title": "Sürücüleri, programları ve seferleri yönetin.",
+          "description": "Sürücüleri görevlendirin, programları paylaşın ve yolcu ile sefer bilgilerini tek noktadan takip edin.",
+          "points": [
+            "Sürücü görevlendirmeleri",
+            "Program yönetimi",
+            "Sefer yürütme takibi"
+          ]
+        },
+        {
+          "title": "Taşımacılık programlarını düzenleyin.",
+          "description": "Tekrarlanan seferleri programlar altında gruplayarak karmaşık ve çok seferli operasyonları kolayca yönetin.",
+          "points": [
+            "Program gruplama",
+            "Tekrarlanan programlar",
+            "Düzenli operasyonlar"
+          ]
+        },
+        {
+          "title": "Tedarikçileri ve hizmetlerini koordine edin.",
+          "description": "Taşımacılık tedarikçilerini, sundukları hizmetleri, uygunluklarını ve görevlendirmelerini tek platformda yönetin.",
+          "points": [
+            "Tedarikçi rehberi",
+            "Hizmetler ve uygunluk",
+            "Görevlendirme talepleri"
+          ]
+        },
+        {
+          "title": "Fiyatlandırmayı ve hizmet ücretlerini kontrol edin.",
+          "description": "Taşımacılık fiyatlarını, maliyetleri ve fiyatlandırma kurallarını tek noktadan yöneterek tekliflerde tutarlılık sağlayın.",
+          "points": [
+            "Fiyat ve maliyet kontrolü",
+            "Fiyatlandırma kuralları",
+            "Tutarlı fiyat teklifleri"
+          ]
+        },
+        {
+          "title": "Operasyonlarınızı finansla birleştirin.",
+          "description": "Gelirler, maliyetler, faturalar ve ödemeler operasyonlardan doğrudan finans süreçlerine aktarılır.",
+          "points": [
+            "Operasyon bağlantılı hesaplar",
+            "Faturalar ve ödemeler",
+            "Anlık finansal görünüm"
+          ]
+        },
+        {
+          "title": "Operasyonel verileri kararlara dönüştürün.",
+          "description": "Her seferi, aracı ve işlemi işletmenizin performansını gösteren raporlara ve panolara dönüştürün.",
+          "points": [
+            "Operasyon panoları",
+            "Özelleştirilebilir raporlar",
+            "Performans analizleri"
+          ]
+        },
+        {
+          "title": "Arapça ve İngilizce doğal olarak çalışın.",
+          "description": "Sağdan sola yazım desteğine sahip iki dilli platform sayesinde her ekip kendi dilinde çalışabilir.",
+          "points": [
+            "Arapça ve İngilizce",
+            "Tam RTL desteği",
+            "Yerelleştirilmiş iş akışları"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "badge": "Canlı Görün",
+      "title": "Ekibimizle tüm özellikleri keşfedin.",
+      "button": "Demo Rezervasyonu Yap"
     }
   }
 }

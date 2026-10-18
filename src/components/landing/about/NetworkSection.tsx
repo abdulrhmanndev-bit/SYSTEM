@@ -94,10 +94,8 @@ export default function NetworkSection() {
             <span className="section-badge-text">{t("badge")}</span>
           </div>
 
-          <h2 className=" max-w-xl text-3xl leading-tight font-bold tracking-tight text-text-primary lg:text-[32px]">
+          <h2 className=" max-w-md text-3xl leading-tight font-bold tracking-tight text-text-primary lg:text-[32px]">
             {t("title")}
-            <br />
-            {t("titleSecond")}
           </h2>
         </div>
 

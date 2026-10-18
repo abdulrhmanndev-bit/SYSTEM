@@ -130,8 +130,7 @@
   "about": {
     "hero": {
       "badge": "About TRANSORA",
-      "title": "We Build the Operating System",
-      "titleSecond": "for Transportation.",
+      "title": "We Build the Operating System for Transportation.",
       "description": "TRANSORA exists to replace fragmented tools with one connected platform so every team that moves people can do it with clarity and control."
     },
     "mission": {
@@ -170,8 +169,7 @@
     },
     "network": {
       "badge": "One Connected Network",
-      "title": "Everything in Transportation,",
-      "titleSecond": "Linked Together.",
+      "title": "Everything in Transportation, Linked Together.",
       "customers": "Customers",
       "drivers": "Drivers",
       "vehicles": "Vehicles",
@@ -231,146 +229,146 @@
     "termsOfService": "Terms of Service"
   },
   "resources": {
-"article": {
-  "categories": {
-    "operations": "Operations"
-  },
-  "by": "By",
-  "author": "Transportation Operations Team",
-  "readTime": "{minutes} min read",
-  "contents": "Contents",
-  "keyIdea": "Key Idea",
-  "continueReading": "Continue Reading",
-  "allArticles": "All articles",
-  "sections": {
-    "challenge": "The operational challenge",
-    "spreadsheets": "Where spreadsheets fall short",
-    "workflow": "Connecting the workflow",
-    "visibility": "Improving visibility",
-    "scaling": "Building a scalable operation",
-    "conclusion": "Final thoughts"
-  },
-  "table": {
-    "title": "Trips — Today",
-    "route": "Route",
-    "vehicle": "Vehicle",
-    "driver": "Driver",
-    "status": "Status",
-    "statuses": {
-      "scheduled": "Scheduled",
-      "progress": "In progress",
-      "completed": "Completed"
-    }
-  },
-  "workflow": {
-    "request": "Request",
-    "route": "Plan route",
-    "assignment": "Assign resources",
-    "trip": "Complete trip",
-    "invoice": "Invoice"
-  },
-  "chart": {
-    "title": "Manual coordination effort vs. connection level",
-    "before": "Disconnected tools",
-    "after": "Connected platform"
-  },
-  "items": {
-    "operators": {
-      "title": "Why Transportation Teams Are Moving Beyond Spreadsheets",
-      "description": "Spreadsheets got many operations started. Here is where they stop scaling — and what connected workflows change.",
-      "content": {
-        "challenge": "Transportation teams coordinate customers, routes, vehicles, drivers, and suppliers every day. Each carries its own details, schedules, and documents. When that information lives in separate places, the work of keeping it aligned falls on people — through calls, messages, and manual checks.",
-        "keyIdea": "Visibility is less about more data and more about having the same data available to everyone who needs it.",
-        "spreadsheets": "Spreadsheets are flexible and familiar. They often get an operation started. As volume grows, a few limits tend to appear:",
-        "problem1": "Multiple versions of the same schedule circulate at once.",
-        "problem2": "Changes are not reflected for drivers or customers in real time.",
-        "problem3": "Linking trips to vehicles, costs, and invoices requires manual work.",
-        "problem4": "Reporting means re-assembling data from several files.",
-        "workflow": "A connected workflow links each step so that one update carries through to the next — from the initial request to the final invoice.",
-        "visibility": "When records are connected, operations, management, and finance can each look at the same trip from their own perspective.",
-        "quote": "The goal isn't another dashboard. It's a shared picture of the day that everyone trusts.",
-        "scaling": "Scaling isn't only about handling more trips. It's about keeping processes consistent as teams, customers, and vehicles grow.",
-        "benefit1": "Standardize how requests, routes, and assignments are created.",
-        "benefit2": "Keep vehicle and driver documents in one place.",
-        "benefit3": "Give each role a view suited to its decisions.",
-        "conclusion": "Moving beyond spreadsheets is a gradual change. Starting with one connected workflow — and expanding from there — tends to be the most sustainable path."
+    "article": {
+      "categories": {
+        "operations": "Operations"
+      },
+      "by": "By",
+      "author": "Transportation Operations Team",
+      "readTime": "{minutes} min read",
+      "contents": "Contents",
+      "keyIdea": "Key Idea",
+      "continueReading": "Continue Reading",
+      "allArticles": "All articles",
+      "sections": {
+        "challenge": "The operational challenge",
+        "spreadsheets": "Where spreadsheets fall short",
+        "workflow": "Connecting the workflow",
+        "visibility": "Improving visibility",
+        "scaling": "Building a scalable operation",
+        "conclusion": "Final thoughts"
+      },
+      "table": {
+        "title": "Trips — Today",
+        "route": "Route",
+        "vehicle": "Vehicle",
+        "driver": "Driver",
+        "status": "Status",
+        "statuses": {
+          "scheduled": "Scheduled",
+          "progress": "In progress",
+          "completed": "Completed"
+        }
+      },
+      "workflow": {
+        "request": "Request",
+        "route": "Plan route",
+        "assignment": "Assign resources",
+        "trip": "Complete trip",
+        "invoice": "Invoice"
+      },
+      "chart": {
+        "title": "Manual coordination effort vs. connection level",
+        "before": "Disconnected tools",
+        "after": "Connected platform"
+      },
+      "items": {
+        "operators": {
+          "title": "Why Transportation Teams Are Moving Beyond Spreadsheets",
+          "description": "Spreadsheets got many operations started. Here is where they stop scaling — and what connected workflows change.",
+          "content": {
+            "challenge": "Transportation teams coordinate customers, routes, vehicles, drivers, and suppliers every day. Each carries its own details, schedules, and documents. When that information lives in separate places, the work of keeping it aligned falls on people — through calls, messages, and manual checks.",
+            "keyIdea": "Visibility is less about more data and more about having the same data available to everyone who needs it.",
+            "spreadsheets": "Spreadsheets are flexible and familiar. They often get an operation started. As volume grows, a few limits tend to appear:",
+            "problem1": "Multiple versions of the same schedule circulate at once.",
+            "problem2": "Changes are not reflected for drivers or customers in real time.",
+            "problem3": "Linking trips to vehicles, costs, and invoices requires manual work.",
+            "problem4": "Reporting means re-assembling data from several files.",
+            "workflow": "A connected workflow links each step so that one update carries through to the next — from the initial request to the final invoice.",
+            "visibility": "When records are connected, operations, management, and finance can each look at the same trip from their own perspective.",
+            "quote": "The goal isn't another dashboard. It's a shared picture of the day that everyone trusts.",
+            "scaling": "Scaling isn't only about handling more trips. It's about keeping processes consistent as teams, customers, and vehicles grow.",
+            "benefit1": "Standardize how requests, routes, and assignments are created.",
+            "benefit2": "Keep vehicle and driver documents in one place.",
+            "benefit3": "Give each role a view suited to its decisions.",
+            "conclusion": "Moving beyond spreadsheets is a gradual change. Starting with one connected workflow — and expanding from there — tends to be the most sustainable path."
+          }
+        },
+        "utilization": {
+          "title": "Five Signals Your Fleet Utilization Is Leaking Revenue",
+          "description": "The patterns that quietly erode margin — and how to spot them before they compound.",
+          "content": {
+            "challenge": "Fleet revenue depends on more than the number of available vehicles. Idle time, empty journeys, and inconsistent scheduling can reduce the value of every working day.",
+            "keyIdea": "Measure how vehicles are actually used, not simply how many are available.",
+            "spreadsheets": "Manual fleet tracking can hide operational patterns that affect revenue.",
+            "problem1": "Vehicles remain idle between assignments.",
+            "problem2": "Empty return trips increase operating costs.",
+            "problem3": "Maintenance conflicts with planned journeys.",
+            "problem4": "Vehicle performance is difficult to compare.",
+            "workflow": "Connect reservations, dispatch, vehicle assignments, and trip completion to create a consistent utilization record.",
+            "visibility": "A shared operational view helps managers identify unused capacity before it becomes a recurring cost.",
+            "quote": "A vehicle can be busy without being profitable.",
+            "scaling": "Improving utilization requires repeatable planning and clear performance measures.",
+            "benefit1": "Track active hours and idle periods.",
+            "benefit2": "Review empty journeys and assignment gaps.",
+            "benefit3": "Compare utilization across vehicle types.",
+            "conclusion": "Small improvements in scheduling and vehicle allocation can compound into meaningful operational gains."
+          }
+        },
+        "efficiency": {
+          "title": "Maximizing Fleet Efficiency: Key Strategies to Implement",
+          "description": "Proven techniques to enhance your fleet performance and increase profitability.",
+          "content": {
+            "challenge": "Efficient fleet management means coordinating vehicles, drivers, maintenance, and customer demand without unnecessary delays.",
+            "keyIdea": "Efficiency improves when teams work from one reliable operational record.",
+            "spreadsheets": "Disconnected records make it harder to identify inefficiencies.",
+            "problem1": "Assignments are updated in multiple places.",
+            "problem2": "Driver availability is difficult to verify.",
+            "problem3": "Maintenance schedules are not linked to dispatch.",
+            "problem4": "Operational performance is reported too late.",
+            "workflow": "Bring planning, assignment, trip execution, and reporting into a connected process.",
+            "visibility": "Live operational visibility makes it easier to respond to disruptions and rebalance resources.",
+            "quote": "Better coordination often creates more capacity than adding another vehicle.",
+            "scaling": "Build repeatable routines that keep fleet performance consistent as demand increases.",
+            "benefit1": "Plan assignments around vehicle availability.",
+            "benefit2": "Coordinate maintenance with operational demand.",
+            "benefit3": "Review efficiency metrics regularly.",
+            "conclusion": "Fleet efficiency is an ongoing process of measuring, improving, and standardizing daily operations."
+          }
+        },
+        "costs": {
+          "title": "The Hidden Costs of Poor Fleet Management",
+          "description": "Identifying the financial impacts of ineffective fleet oversight and how to mitigate them.",
+          "content": {
+            "challenge": "Fleet costs extend beyond fuel and maintenance. Delays, unused capacity, administrative work, and missed information can quietly reduce profitability.",
+            "keyIdea": "Operational and financial records should describe the same trip.",
+            "spreadsheets": "Fragmented records can make costs harder to identify and control.",
+            "problem1": "Supplier charges are difficult to reconcile.",
+            "problem2": "Trip expenses are recorded after long delays.",
+            "problem3": "Empty journeys are not measured consistently.",
+            "problem4": "Management reports miss indirect costs.",
+            "workflow": "Connect trip planning and completion with supplier expenses, customer invoices, and financial reporting.",
+            "visibility": "A unified view makes it easier to understand costs by trip, route, customer, and vehicle.",
+            "quote": "You cannot improve a cost you cannot reliably connect to its source.",
+            "scaling": "Consistent financial processes make cost control easier as operations grow.",
+            "benefit1": "Record costs against the relevant trip.",
+            "benefit2": "Compare planned and actual expenses.",
+            "benefit3": "Review margins across routes and customers.",
+            "conclusion": "Better cost control starts with connected records and clear responsibility for operational data."
+          }
+        }
       }
     },
-    "utilization": {
-      "title": "Five Signals Your Fleet Utilization Is Leaking Revenue",
-      "description": "The patterns that quietly erode margin — and how to spot them before they compound.",
-      "content": {
-        "challenge": "Fleet revenue depends on more than the number of available vehicles. Idle time, empty journeys, and inconsistent scheduling can reduce the value of every working day.",
-        "keyIdea": "Measure how vehicles are actually used, not simply how many are available.",
-        "spreadsheets": "Manual fleet tracking can hide operational patterns that affect revenue.",
-        "problem1": "Vehicles remain idle between assignments.",
-        "problem2": "Empty return trips increase operating costs.",
-        "problem3": "Maintenance conflicts with planned journeys.",
-        "problem4": "Vehicle performance is difficult to compare.",
-        "workflow": "Connect reservations, dispatch, vehicle assignments, and trip completion to create a consistent utilization record.",
-        "visibility": "A shared operational view helps managers identify unused capacity before it becomes a recurring cost.",
-        "quote": "A vehicle can be busy without being profitable.",
-        "scaling": "Improving utilization requires repeatable planning and clear performance measures.",
-        "benefit1": "Track active hours and idle periods.",
-        "benefit2": "Review empty journeys and assignment gaps.",
-        "benefit3": "Compare utilization across vehicle types.",
-        "conclusion": "Small improvements in scheduling and vehicle allocation can compound into meaningful operational gains."
+    "cover": {
+      "imageAlt": "Transportation management platform connecting dispatch, fleet and finance",
+      "workflow": "Customer → Route → Vehicle → Driver → Invoice",
+      "tripStatus": "TRIP STATUS",
+      "statuses": {
+        "scheduled": "Scheduled",
+        "progress": "In progress",
+        "completed": "Completed"
       }
     },
-    "efficiency": {
-      "title": "Maximizing Fleet Efficiency: Key Strategies to Implement",
-      "description": "Proven techniques to enhance your fleet performance and increase profitability.",
-      "content": {
-        "challenge": "Efficient fleet management means coordinating vehicles, drivers, maintenance, and customer demand without unnecessary delays.",
-        "keyIdea": "Efficiency improves when teams work from one reliable operational record.",
-        "spreadsheets": "Disconnected records make it harder to identify inefficiencies.",
-        "problem1": "Assignments are updated in multiple places.",
-        "problem2": "Driver availability is difficult to verify.",
-        "problem3": "Maintenance schedules are not linked to dispatch.",
-        "problem4": "Operational performance is reported too late.",
-        "workflow": "Bring planning, assignment, trip execution, and reporting into a connected process.",
-        "visibility": "Live operational visibility makes it easier to respond to disruptions and rebalance resources.",
-        "quote": "Better coordination often creates more capacity than adding another vehicle.",
-        "scaling": "Build repeatable routines that keep fleet performance consistent as demand increases.",
-        "benefit1": "Plan assignments around vehicle availability.",
-        "benefit2": "Coordinate maintenance with operational demand.",
-        "benefit3": "Review efficiency metrics regularly.",
-        "conclusion": "Fleet efficiency is an ongoing process of measuring, improving, and standardizing daily operations."
-      }
-    },
-    "costs": {
-      "title": "The Hidden Costs of Poor Fleet Management",
-      "description": "Identifying the financial impacts of ineffective fleet oversight and how to mitigate them.",
-      "content": {
-        "challenge": "Fleet costs extend beyond fuel and maintenance. Delays, unused capacity, administrative work, and missed information can quietly reduce profitability.",
-        "keyIdea": "Operational and financial records should describe the same trip.",
-        "spreadsheets": "Fragmented records can make costs harder to identify and control.",
-        "problem1": "Supplier charges are difficult to reconcile.",
-        "problem2": "Trip expenses are recorded after long delays.",
-        "problem3": "Empty journeys are not measured consistently.",
-        "problem4": "Management reports miss indirect costs.",
-        "workflow": "Connect trip planning and completion with supplier expenses, customer invoices, and financial reporting.",
-        "visibility": "A unified view makes it easier to understand costs by trip, route, customer, and vehicle.",
-        "quote": "You cannot improve a cost you cannot reliably connect to its source.",
-        "scaling": "Consistent financial processes make cost control easier as operations grow.",
-        "benefit1": "Record costs against the relevant trip.",
-        "benefit2": "Compare planned and actual expenses.",
-        "benefit3": "Review margins across routes and customers.",
-        "conclusion": "Better cost control starts with connected records and clear responsibility for operational data."
-      }
-    }
-  }
-}
-,"cover": {
-  "imageAlt": "Transportation management platform connecting dispatch, fleet and finance",
-  "workflow": "Customer → Route → Vehicle → Driver → Invoice",
-  "tripStatus": "TRIP STATUS",
-  "statuses": {
-    "scheduled": "Scheduled",
-    "progress": "In progress",
-    "completed": "Completed"
-  }
-},
     "popular": {
       "badge": "POPULAR RESOURCES",
       "title": "Practical guides teams return to.",
@@ -475,8 +473,7 @@
     },
     "hero": {
       "badge": "Resources",
-      "title": "Ideas, Guides, and Playbooks for",
-      "titleSecond": "Transportation Teams.",
+      "title": "Ideas, Guides, and Playbooks for Transportation Teams.",
       "description": "Practical thinking on running connected operations — from dispatch and fleet to pricing and finance."
     },
     "featured": {
@@ -499,8 +496,7 @@
       }
     },
     "newsletter": {
-      "title": "Get transportation operations insights in",
-      "titleSecond": "your inbox.",
+      "title": "Get transportation operations insights in your inbox.",
       "description": "One thoughtful email a month. No noise, unsubscribe anytime.",
       "placeholder": "you@company.com",
       "button": "Subscribe"
@@ -515,6 +511,119 @@
       "explorePlatform": "Explore Platform",
       "note": "Built for transportation companies, travel operators, and mobility businesses.",
       "imageAlt": "TRANSORA transportation operations dashboard"
+    }
+  },
+  "solutions": {
+    "hero": {
+      "badge": "Solutions",
+      "title": "Built for the Way You Move People.",
+      "description": "Whatever kind of transportation business you run, TRANSORA adapts to your operations — not the other way around."
+    }
+  },
+  "features": {
+    "hero": {
+      "badge": "Features",
+      "title": "Every Feature Your Transportation Operation Runs On.",
+      "description": "Ten deeply connected capabilities — from bookings to accounting — built around how transportation businesses actually work."
+    },
+    "grid": {
+      "items": [
+        {
+          "title": "Run daily operations from a single command center.",
+          "description": "Bookings, assignments, dispatch, and live trip status live in one connected board — no more chasing updates across spreadsheets and chat threads.",
+          "points": [
+            "Unified dispatch board",
+            "Real-time trip status",
+            "Booking-to-arrival tracking"
+          ]
+        },
+        {
+          "title": "Plan routes and track every movement.",
+          "description": "Build routes and destinations, then follow each vehicle from origin to arrival with clear, connected movement data.",
+          "points": [
+            "Route & destination builder",
+            "Live movement tracking",
+            "Origin-to-arrival logging"
+          ]
+        },
+        {
+          "title": "Keep your fleet ready and accounted for.",
+          "description": "Monitor availability, assignments, utilization, and maintenance so the right vehicle is always ready for the right trip.",
+          "points": [
+            "Availability & assignments",
+            "Utilization insights",
+            "Maintenance scheduling"
+          ]
+        },
+        {
+          "title": "Manage drivers, schedules, and trips.",
+          "description": "Assign drivers, share schedules, and track execution with passenger and trip details available in one place.",
+          "points": [
+            "Driver assignments",
+            "Schedule management",
+            "Trip execution tracking"
+          ]
+        },
+        {
+          "title": "Organize transportation programs and schedules.",
+          "description": "Group recurring movements into programs, keeping complex, multi-trip operations structured and easy to run.",
+          "points": [
+            "Program grouping",
+            "Recurring schedules",
+            "Structured operations"
+          ]
+        },
+        {
+          "title": "Coordinate suppliers and their services.",
+          "description": "Manage transportation suppliers, the services they offer, availability, and assignments — all connected to your operations.",
+          "points": [
+            "Supplier directory",
+            "Service & availability",
+            "Assignment requests"
+          ]
+        },
+        {
+          "title": "Control pricing and service rates.",
+          "description": "Manage transportation rates, costs, and pricing rules from one place so quotes and margins stay consistent.",
+          "points": [
+            "Rate & cost control",
+            "Pricing rules",
+            "Consistent quoting"
+          ]
+        },
+        {
+          "title": "Connect operations with your finances.",
+          "description": "Revenue, costs, invoices, and payouts flow directly from operations, giving finance a live and accurate picture.",
+          "points": [
+            "Operations-linked ledgers",
+            "Invoices & payouts",
+            "Live financial picture"
+          ]
+        },
+        {
+          "title": "Turn operational data into decisions.",
+          "description": "Convert every trip, vehicle, and transaction into reports and dashboards that show exactly how the business is performing.",
+          "points": [
+            "Operational dashboards",
+            "Custom reports",
+            "Performance insights"
+          ]
+        },
+        {
+          "title": "Work in Arabic and English, natively.",
+          "description": "A fully bilingual platform with right-to-left support, so every team can operate in the language they work in.",
+          "points": [
+            "Arabic & English",
+            "Full RTL support",
+            "Localized workflows"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "badge": "See It Live",
+      "title": "Explore every feature with our team.",
+      "button": "Book a Demo"
     }
   }
 }
